@@ -38,6 +38,33 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 
+# ====================== Default Styles ======================
+# These are defaults used for the frontmatter for these file types
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      comments: false # Change to false if you don't want to use Commento.io
+
+      search: true
+      sidebar: home_sidebar
+      topnav: topnav
+
+  - # Agent layout defaults
+    scope:
+      path: "pages/documentation/agents"
+      type: "pages"
+    values:
+      layout: "agent"
+      comments: false # Change to false if you don't want to use Commento.io
+      search: true
+      sidebar: home_sidebar
+      topnav: topnav
+
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
