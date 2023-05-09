@@ -29,9 +29,7 @@ url: "https://naluscientific.github.io" # the base hostname & protocol for your 
 twitter_username: jekyllrb
 github_username:  jekyll
 
-# Build settings
-theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: "air"
+
 # plugins:
 
 kramdown:
