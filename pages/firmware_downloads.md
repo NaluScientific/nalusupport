@@ -1,5 +1,5 @@
 ---
 title: Firmware Downloads
-permalink: /firmware.html
+permalink: /firmware/
 layout: single
 ---

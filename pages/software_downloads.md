@@ -1,5 +1,5 @@
 ---
 title: Software Downloads
-permalink: /software.html
+permalink: /software/
 layout: single
 ---

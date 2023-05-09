@@ -1,5 +1,5 @@
 ---
 title: Documentation
-permalink: /documentation.html
+permalink: /documentation/
 layout: single
 ---

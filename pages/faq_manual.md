@@ -1,5 +1,5 @@
 ---
 title: FAQ
-permalink: /faq.html
+permalink: /faq/
 layout: single
 ---
