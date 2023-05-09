@@ -1,35 +1,87 @@
 ---
-title: Frequently Asked Questions
-permalink: /faq/
+title: FAQ
+permalink: /troubleshooting/
 layout: single
 toc: true
-toc_label: Sections
+toc_label: Jump To...
 toc_sticky: true
 ---
 
+## General Questions
 
-# Naluscope
+### How Do I Request Support?
 
-NaluScope is an easy-to-use application designed to control and read from Nalu hardware. Its primary purpose is to allow the user to easily view and record waveforms that are fed into the Nalu eval boards. More advanced usage of the NaluScope application includes changing the configuration and register values on the fly. *Changes to these values should **not** be changed without consulting a representative of Nalu Scientific as it can put the board into unsafe configuration causing damage.*
+Please [email us](/contact/) to request support.
 
-## Windows
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+### How Do I Update My Software?
 
-### Lorem Ipsum
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+**Windows**
 
-### Lorem Ipsum
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+1. First, uninstall your current version of the software.
+2. Visit the [Software](/software/) page and download the latest installer.
+3. Run the installer.
 
-### Lorem Ipsum
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+**Linux**
 
-### Lorem Ipsum
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+1. Visit the [Software](/software/) page and download the latest `.tar.gz` file.
+2. Older versions may be deleted if desired.
 
-## Linux
 
-### Black Screen on Startup
+## Troubleshooting
+
+Below are some solutions to issues you may encounter when using Nalu Scientific products.
+If the solutions below are not working or your problem is not listed, please [contact us](/contact/) to request support.
+
+### Naluscope
+
+Below are some solutions to issues you may encounter when using Naluscope. More troubleshooting support can be found in the [Naluscope Manual](/documentation/).
+
+<div class="notice--info" markdown="1">
+Any driver issues can usually be solved by downloading these drivers:
+
+- [VCP](https://ftdichip.com/drivers/vcp-drivers/)
+- [D2XX](https://ftdichip.com/drivers/d2xx-drivers/)
+- [D3XX (for USB 3.0)](https://ftdichip.com/drivers/d3xx-drivers/)
+</div>
+
+#### Board Not Detected
+
+If the board does not appear in the list of available ports in the startup dialog, here are some things to try:
+
+* Click the "Refresh" button in the dialog to reload the list of available ports.
+* Make sure the board is powered on and connected with a working cable.
+* Make sure the board is programmed with the latest firmware.
+* Check the Windows Device Manager for driver issues.
+
+If the application is used on Linux, the port's permissions may need to be modified.
+First, find which `/dev/ttyUSB<Port Number>` device the board appears as. This can be done by running `ls /dev/ttyUSB*` before and after connecting the board. The new device that appears is the correct port. Then, run the following command to modify the permissions:
+
+```sh
+sudo chmod 777 /dev/ttyUSB<Port Number>
+```
+
+#### Cannot Startup Board
+
+If the board does not start up, here are some things to try:
+
+* Power cycle the board.
+* Make sure the correct port and board model are selected in the startup dialog.
+* Make sure the board is powered on and connected with a working cable.
+* Make sure the software and firmware are up to date.
+
+
+#### Cannot Capture Events
+
+If the board suddenly stops sending back data after previously working, here are some things to try:
+
+* Make sure the board still has power and hasn't accidentally been disconnected.
+* In the *Settings* menu, select *Reset* and then *Reinitialize*.
+* Close and reopen NaluScope, then start up the board again.
+
+These steps may also help if calibrations cannot be generated.
+
+#### (Linux) Black Screen on Startup
+
 This could be due to incompatible or improperly links to the graphics driver between
-Linux distributions. This can be solved by deleting `libstdc++.so.6` in the nalu folder,
+Linux distributions. This can be solved by deleting `libstdc++.so.6` in the `nalu` folder,
 allowing the system to fall back on its own `libstdc++.so`.
