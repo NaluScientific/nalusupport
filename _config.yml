@@ -18,25 +18,41 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Nalu Support & Downloads
+title: Nalu Support
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "/nalusupport" # the subpath of your site, e.g. /blog
-url: "https://naluscientific.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+# baseurl: "" # the subpath of your site, e.g. /blog
+url: https://support.naluscientific.com # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
+github: [metadata]
 
-# Build settings
-theme: minima
 plugins:
-  - jekyll-feed
+  - jekyll-include-cache
 
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
+
+minimal_mistakes_skin: air
+
+# ====================== Default Styles ======================
+# These are defaults used for the frontmatter for these file types
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: false
+      share: false
+      related: false
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
