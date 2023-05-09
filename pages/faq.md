@@ -1,6 +1,6 @@
 ---
 title: FAQ
-permalink: /troubleshooting/
+permalink: /faq/
 layout: single
 toc: true
 toc_label: Jump To...
