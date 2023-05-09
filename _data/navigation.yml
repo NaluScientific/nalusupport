@@ -1,0 +1,13 @@
+main:
+  - title: "Main Site"
+    url: https://www.naluscientific.com/
+  - title: "FAQ"
+    url: /faq/
+  - title: "Contact Us"
+    url: /contact/
+  - title: "Software"
+    url: /software/
+  - title: "Firmware"
+    url: /firmware/
+  - title: "Documentation"
+    url: /documentation/

@@ -3,8 +3,8 @@
 topnav:
 - title: Topnav
   items:
-    - title: Home
-      url: /
+    - title: Main Site
+      external_url: https://www.naluscientific.com/
     - title: FAQ
       url: /faq
     - title: Contact Us
@@ -17,7 +17,8 @@ topnav_dropdowns:
     - title: Downloads
       folderitems:
         - title: Software
-          url: https://github.com/mtmk-ee/artemis-cubesat-kit
+          url: /software
         - title: Firmware
-          url: https://github.com/mtmk-ee/artemis-cubesat-kit/issues
+          url: /firmware
         - title: Documentation
+          url: /documentation
