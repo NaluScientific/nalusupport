@@ -1,0 +1,43 @@
+{% comment %}
+  This template generates a table for displaying and linking to various versions of a software package.
+  The YAML data should be specified in the _data folder.
+
+  Set the "versions" argument to something with the following structure:
+
+  - name: some_version
+    downloads:
+      - # download group 1, shows up as its own column
+        Download name: download link
+        Download name: download link
+      - # download group 2, shows up as its own column
+        Download name: download link
+        Download name: download link
+{% endcomment %}
+
+{% assign versions = include.versions %}
+{% assign columns = include.cols %}
+
+<table>
+  <thead>
+    <tr>
+      {% for column in columns %}
+        <th>{{ column }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for version in versions %}
+      <tr>
+        <td>{{ version.name }}</td>
+        {% for download in version.downloads %}
+        <td>
+          {% for asdf in download %}
+            <a href="{{ asdf[1] }}">{{ asdf[0] }}</a>
+            {% if forloop.last == false %} <br/> {% endif %}
+          {% endfor %}
+        </td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+</tbody>
+</table>

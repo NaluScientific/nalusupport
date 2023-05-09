@@ -1,0 +1,12 @@
+
+
+<div>
+    <button class="accordion">{{ include.name }}</button>
+    {% assign display = "none" %}
+    {% if include.expand %}
+        {% assign display = "block" %}
+    {% endif %}
+    <div class="panel" style="display: {{ display }};">
+        {{ include.content }}
+    </div>
+</div>
