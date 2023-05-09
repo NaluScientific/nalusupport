@@ -31,7 +31,7 @@ github_username:  jekyll
 
 # Build settings
 theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: "aqua"
+minimal_mistakes_skin: "air"
 # plugins:
 
 kramdown:
