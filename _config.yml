@@ -37,6 +37,8 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 
+minimal_mistakes_skin: air
+
 # ====================== Default Styles ======================
 # These are defaults used for the frontmatter for these file types
 defaults:
