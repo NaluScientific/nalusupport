@@ -35,7 +35,7 @@ If the solutions below are not working or your problem is not listed, please [co
 
 ## Naluscope
 
-Below are some solutions to issues you may encounter when using Naluscope. More troubleshooting support can be found in the [Naluscope Manual](/documentation/).
+Below are some solutions to issues you may encounter when using Naluscope. More troubleshooting support can be found in the [Naluscope Manual](/boards/) for your board.
 
 <div class="notice--info" markdown="1">
 Any driver issues can usually be solved by downloading these drivers:
