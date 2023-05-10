@@ -11,6 +11,7 @@ kramdown:
   syntax_highlighter: rouge
 
 # ====================== Theme Settings ======================
+logo: "/assets/images/masthead.png"
 
 # -------------------------- Color Scheme --------------------------
 # Color scheme supports "light" (default) and "dark"
