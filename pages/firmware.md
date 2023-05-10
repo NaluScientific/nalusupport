@@ -5,7 +5,7 @@ layout: single
 ---
 
 
-{% assign firmware_versions = site.data.firmware_versions %}
+{% assign firmware_versions = site.data.firmware_versions | sort %}
 
 {% assign naluscope_cols = "Version;Download" | split: ";" %}
 {% assign naludaq_rs_cols = "Version;Download" | split: ";" %}
