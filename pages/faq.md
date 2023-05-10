@@ -8,13 +8,13 @@ nav_order: 4
 Our FAQ/Troubleshooting page is a compilation of the most commonly asked questions and issues that our customers have encountered while using our products.
 We have provided detailed solutions and step-by-step instructions for each problem, so that our customers can get back to their research as quickly as possible.
 
-## General Questions
+# General Questions
 
-### How Do I Request Support?
+## How Do I Request Support?
 
 Please [email us](/contact/) to request support.
 
-### How Do I Update My Software?
+## How Do I Update My Software?
 
 **Windows**
 
@@ -28,12 +28,12 @@ Please [email us](/contact/) to request support.
 2. Older versions may be deleted if desired.
 
 
-## Troubleshooting
+# Troubleshooting
 
 Below are some solutions to issues you may encounter when using Nalu Scientific products.
 If the solutions below are not working or your problem is not listed, please [contact us](/contact/) to request support.
 
-### Naluscope
+## Naluscope
 
 Below are some solutions to issues you may encounter when using Naluscope. More troubleshooting support can be found in the [Naluscope Manual](/documentation/).
 
@@ -45,7 +45,9 @@ Any driver issues can usually be solved by downloading these drivers:
 - [D3XX (for USB 3.0)](https://ftdichip.com/drivers/d3xx-drivers/)
 </div>
 
-#### Board Not Detected
+----
+
+### Board Not Detected
 
 If the board does not appear in the list of available ports in the startup dialog, here are some things to try:
 
@@ -61,7 +63,9 @@ First, find which `/dev/ttyUSB<Port Number>` device the board appears as. This c
 sudo chmod 777 /dev/ttyUSB<Port Number>
 ```
 
-#### Cannot Startup Board
+----
+
+### Cannot Startup Board
 
 If the board does not start up, here are some things to try:
 
@@ -70,8 +74,9 @@ If the board does not start up, here are some things to try:
 * Make sure the board is powered on and connected with a working cable.
 * Make sure the software and firmware are up to date.
 
+----
 
-#### Cannot Capture Events
+### Cannot Capture Events
 
 If the board suddenly stops sending back data after previously working, here are some things to try:
 
@@ -81,7 +86,9 @@ If the board suddenly stops sending back data after previously working, here are
 
 These steps may also help if calibrations cannot be generated.
 
-#### (Linux) Black Screen on Startup
+---
+
+### (Linux) Black Screen on Startup
 
 This could be due to incompatible or improperly links to the graphics driver between
 Linux distributions. This can be solved by deleting `libstdc++.so.6` in the `nalu` folder,
