@@ -26,7 +26,6 @@ aodsoc_aods:
     - name: NaluScope vX.X.X.X Manual
       url:
   archived:
-
 aodsoc_asoc:
   current:
     - name: Firmware v2
@@ -38,7 +37,6 @@ aodsoc_asoc:
     - name: NaluScope vX.X.X.X Manual
       url:
   archived:
-
 
 asocv3:
   current:
@@ -54,7 +52,6 @@ asocv3:
     - name: Firmware v58
       url: https://drive.google.com/file/d/12kGrLGnFpF5DTh-L-Wus5dwBXLajoqT0/view?usp=share_link
 
-
 hdsocv1_evalr2:
   current:
     - name: Firmware v938
@@ -68,7 +65,6 @@ hdsocv1_evalr2:
   archived:
     - name: Firmware v101
       url: https://drive.google.com/file/d/1GNScTHxwNvSg22PFzAELB3Rw2JiUlOBB/view?usp=share_link
-
 
 hiper:
   current:
@@ -92,7 +88,6 @@ upaci:
     - name: NaluScope vX.X.X.X Manual
       url:
   archived:
-
 
 upac96:
   current:
