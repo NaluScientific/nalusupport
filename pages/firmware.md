@@ -4,6 +4,9 @@ permalink: /firmware/
 layout: single
 ---
 
+On this page, you will find a comprehensive list of firmware updates organized by product model and version number.
+
+If you have any questions about our firmware, or need assistance with installation, please don't hesitate to [contact us](/contact/). We are always happy to help you get the most out of our products.
 
 {% assign firmware_versions = site.data.firmware_versions | sort %}
 
