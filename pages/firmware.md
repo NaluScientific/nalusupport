@@ -9,8 +9,6 @@ layout: single
 
 {% assign cols = "Version;Download" | split: ";" %}
 
-## NaluScope
-
 {% for key in firmware_versions %}
 {% assign name = key[0] %}
 {% assign value = key[1] %}
