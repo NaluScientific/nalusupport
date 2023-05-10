@@ -32,7 +32,7 @@
         {% for download in version.downloads %}
         <td>
           {% for asdf in download %}
-            <a href="{{ asdf[1] | markdownify }}">{{ asdf[0] | markdownify }}</a>
+            <a href="{{ asdf[1] }}">{{ asdf[0] | markdownify }}</a>
             {% if forloop.last == false %} <br/> {% endif %}
           {% endfor %}
         </td>
