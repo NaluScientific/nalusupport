@@ -1,0 +1,38 @@
+
+AARDVARC_v3:
+  latest:
+    - name: Firmware v86
+      downloads:
+        - Bitfile: https://drive.google.com/file/d/18ARffbSS-GGTUndroZDIkKqRx5iK-FvA/view?usp=share_link
+  older:
+    - name: Firmware v82
+      downloads:
+        - Bitfile: https://drive.google.com/file/d/1Fl94yZ3ajiUKXsrBSLTq3At9r7m0uRLK/view?usp=share_link
+    - name: Firmware v71
+      downloads:
+        - Bitfile: https://drive.google.com/file/d/1tKL5B2GLRUwhy_OrFcBbSTyZADxN8ybb/view?usp=share_link
+
+ASOC_v3:
+  latest:
+    - name: 0.11.0.0
+      downloads:
+        - Windows: https://drive.google.com/file/d/1-n_BQYrGZvjP4cyXHEeNWXKfsJzepwkJ/view?usp=share_link
+          Linux:  1
+        - Manual: /documentation/#manual_0_11_0_0
+  older:
+    - name: 0.9.0
+      downloads:
+        - Windows: https://drive.google.com/file/d/1nPV9OGSwpM-qDMNtXcPpVct_tlkxIYZo/view?usp=share_link
+        - Manual: https://drive.google.com/file/d/1Bm4XrDCuLAPWePvYFFsczUck5Ec-VN08/view?usp=share_link
+    - name: 0.7.4
+      downloads:
+        - Windows: https://drive.google.com/file/d/1o1nixwrMPE3JmzY1XsTEyly8onPT-k_4/view?usp=share_link
+        -
+
+
+naludaq_rs:
+  latest:
+    - name: 0.16.0
+      downloads:
+        - Download: https://drive.google.com/file/d/1rony4-96lThJZcHtTtFeOpojxAzfDR6z/view?usp=share_link
+  older:
