@@ -21,18 +21,18 @@
   <thead>
     <tr>
       {% for column in columns %}
-        <th>{{ column }}</th>
+        <th>{{ column | markdownify }}</th>
       {% endfor %}
     </tr>
   </thead>
   <tbody>
     {% for version in versions %}
       <tr>
-        <td>{{ version.name | markdownify}}</td>
+        <td>{{ version.name | markdownify }}</td>
         {% for download in version.downloads %}
         <td>
           {% for asdf in download %}
-            <a href="{{ asdf[1] }}">{{ asdf[0] }}</a>
+            <a href="{{ asdf[1] | markdownify }}">{{ asdf[0] | markdownify }}</a>
             {% if forloop.last == false %} <br/> {% endif %}
           {% endfor %}
         </td>
