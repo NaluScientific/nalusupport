@@ -3,23 +3,42 @@ naluscope:
   latest:
     - name: 0.11.0.0
       downloads:
-        - Windows: https://drive.google.com/file/d/1-n_BQYrGZvjP4cyXHEeNWXKfsJzepwkJ/view?usp=share_link
-          Linux:  1
-        - Manual: /documentation/#manual_0_11_0_0
+        - Windows: https://drive.google.com/file/d/18jLabxT28QmdS_f2RXhivEC8QYF13cjV/view?usp=share_link
+          Linux: https://drive.google.com/file/d/1s2mN5sNXHajR9Lthn0iCiXfOi7NreX0i/view?usp=share_link
+        -
   older:
+    - name: 0.10.1.0
+      downloads:
+        - Windows: https://drive.google.com/file/d/1kHpfFuzEbBz1NGSEPkjWHc-nQ8EgpS3q/view?usp=share_link
+        -
+    - name: 0.10.0.0
+      downloads:
+        - Linux: https://drive.google.com/file/d/1YuDchjl5B-QVL0LgSEpY9f4yXsIipIne/view?usp=share_link
+        -
     - name: 0.9.0
       downloads:
-        - Windows: https://drive.google.com/file/d/1nPV9OGSwpM-qDMNtXcPpVct_tlkxIYZo/view?usp=share_link
-        - Manual: https://drive.google.com/file/d/1Bm4XrDCuLAPWePvYFFsczUck5Ec-VN08/view?usp=share_link
+        - Windows: https://drive.google.com/file/d/177P0-_32tIDUCOlb4sBGa9xAzqksMRDg/view?usp=share_link
+        - Manual: https://drive.google.com/file/d/1mDgzXfSj8rno9DkMidrtvVsstTCd0W0i/view?usp=share_link
+    - name: 0.8.2.0
+      downloads:
+        - Windows: https://drive.google.com/file/d/1bJAMgO4cd_YcxriFaaDvW_zLmk-aHljk/view?usp=share_link
+        -
     - name: 0.7.4
       downloads:
-        - Windows: https://drive.google.com/file/d/1o1nixwrMPE3JmzY1XsTEyly8onPT-k_4/view?usp=share_link
+        - Windows: https://drive.google.com/file/d/1JRJAYxkWycTYyBdvmdYAm7BzMd-0vIPW/view?usp=share_link
+        -
+    - name: 0.7.1
+      downloads:
+        - Windows: https://drive.google.com/file/d/1zPS7S5KLpSsbg5HleSHaiof6SxGYxrNw/view?usp=share_link
         -
 
 
 naludaq_rs:
   latest:
+    - name: 0.17.0
+      downloads:
+        - Linux: https://drive.google.com/file/d/1oRvU86N1STF5whW3UMQ2lNYp5ULIDe4-/view?usp=share_link
+  older:
     - name: 0.16.0
       downloads:
-        - Download: https://drive.google.com/file/d/1rony4-96lThJZcHtTtFeOpojxAzfDR6z/view?usp=share_link
-  older:
+        - Windows: https://drive.google.com/file/d/1GqQWEmhuhRjbPVgAXjv0KvV3_-qC-M5e/view?usp=share_link
