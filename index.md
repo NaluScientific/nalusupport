@@ -1,9 +1,11 @@
 ---
 layout: home
-title:
+title: Home
+nav_order: 0
+custom_header: true
 ---
 
-## Welcome to Nalu Scientific
+# Welcome to Nalu Scientific
 
 
 Nalu Scientific, LLC is a provider of cutting-edge scientific instrumentation for researchers and industry professionals.

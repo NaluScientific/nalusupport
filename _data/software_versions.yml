@@ -17,7 +17,7 @@ naluscope:
         -
 
 
-naludaq_rs:
+backend:
   latest:
     - name: 0.16.0
       downloads:
