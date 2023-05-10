@@ -28,7 +28,7 @@
   <tbody>
     {% for version in versions %}
       <tr>
-        <td>{{ version.name | markdownify}}</td>
+        <td>{{ version.name }}</td>
         {% for download in version.downloads %}
         <td>
           {% for asdf in download %}
