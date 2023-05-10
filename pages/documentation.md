@@ -1,5 +1,6 @@
 ---
+layout: default
 title: Documentation
 permalink: /documentation/
-layout: single
+nav_order: 3
 ---

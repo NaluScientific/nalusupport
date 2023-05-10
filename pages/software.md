@@ -1,8 +1,11 @@
 ---
+layout: default
 title: Software Downloads
 permalink: /software/
-layout: single
+nav_order: 1
 ---
+
+
 
 On this page, you will find a comprehensive list of software downloads organized by product and version number.
 

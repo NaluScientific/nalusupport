@@ -1,7 +1,8 @@
 ---
+layout: default
 title: Firmware Downloads
 permalink: /firmware/
-layout: single
+nav_order: 2
 ---
 
 On this page, you will find a comprehensive list of firmware updates organized by product model and version number.
