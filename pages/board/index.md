@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Board Downloads
-# permalink: /board/
+permalink: /boards/
 nav_order: 2
 has_children: true
 ---
