@@ -1,9 +1,6 @@
 ---
-layout: board
-title: AARDVARCv3
-# permalink: /firmware/
-nav_order: 1
+title: ASOCV3
+nav_order: 5
 parent: Board Downloads
-model: aardvarcv3
-readable_model: AARDVARCv3
+model: asocv3
 ---

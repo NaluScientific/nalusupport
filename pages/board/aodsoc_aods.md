@@ -1,9 +1,6 @@
 ---
-layout: board
-title: AARDVARCv3
-# permalink: /firmware/
-nav_order: 1
+title: AODSOC AODS
+nav_order: 2
 parent: Board Downloads
-model: aardvarcv3
-readable_model: AARDVARCv3
+model: aodsoc_aods
 ---

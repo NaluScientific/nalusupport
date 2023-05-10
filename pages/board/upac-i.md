@@ -1,9 +1,6 @@
 ---
-layout: board
-title: AARDVARCv3
-# permalink: /firmware/
-nav_order: 1
+title: UPAC-I
+nav_order: 9
 parent: Board Downloads
-model: aardvarcv3
-readable_model: AARDVARCv3
+model: upac-i
 ---

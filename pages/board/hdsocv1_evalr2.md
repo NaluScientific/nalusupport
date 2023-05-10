@@ -1,9 +1,6 @@
 ---
-layout: board
-title: AARDVARCv3
-# permalink: /firmware/
-nav_order: 1
+title: HDSOCV1 EVALR2
+nav_order: 6
 parent: Board Downloads
-model: aardvarcv3
-readable_model: AARDVARCv3
+model: hdsocv1_evalr2
 ---
