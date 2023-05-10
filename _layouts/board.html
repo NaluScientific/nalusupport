@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+
+
+{% assign current = site.data.board[page.model].current %}
+{% assign archive = site.data.board[page.model].archived %}
+
+{{ content }}
+
+<h2>Latest Version</h2>
+
+
+<table>
+    <tbody>
+        {% for item in current %}
+        <tr>
+            <td><a href="{{ item.url }}">{{ item.name | markdownify | remove: "<p>" | remove: "</p>" }}</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+<h2>Archive</h2>
+
+
+<table>
+    <tbody>
+        {% for item in archive %}
+        <tr>
+            <td><a href="{{ item.url }}">{{ item.name | markdownify | remove: "<p>" | remove: "</p>"}}</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

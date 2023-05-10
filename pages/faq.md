@@ -1,10 +1,8 @@
 ---
+layout: default
 title: FAQ
 permalink: /faq/
-layout: single
-toc: true
-toc_label: Jump To...
-toc_sticky: true
+nav_order: 4
 ---
 
 Our FAQ/Troubleshooting page is a compilation of the most commonly asked questions and issues that our customers have encountered while using our products.

@@ -1,7 +1,8 @@
 ---
+layout: default
 title: Contact
 permalink: /contact/
-layout: single
+nav_order: 5
 ---
 
 Don't hesitate to email us with any questions, requests, or feedback.

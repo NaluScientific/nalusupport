@@ -1,0 +1,27 @@
+
+
+naluscope:
+  current:
+    - name: 0.11.0.0
+      downloads:
+        windows: https://drive.google.com/file/d/1-n_BQYrGZvjP4cyXHEeNWXKfsJzepwkJ/view?usp=share_link
+        linux: https://drive.google.com/file/d/1s2mN5sNXHajR9Lthn0iCiXfOi7NreX0i/view?usp=share_link
+  archived:
+    - name: 0.9.0
+      downloads:
+        windows: https://drive.google.com/file/d/1nPV9OGSwpM-qDMNtXcPpVct_tlkxIYZo/view?usp=share_link
+    - name: 0.7.4
+      downloads:
+        windows: https://drive.google.com/file/d/1o1nixwrMPE3JmzY1XsTEyly8onPT-k_4/view?usp=share_link
+
+
+backend:
+  current:
+    - name: 0.18.0
+      downloads:
+        windows: https://drive.google.com/file/d/1ND-qOF8QnVo2Zi0FPLc7hFaNGH2UZh78/view?usp=share_link
+        linux: https://drive.google.com/file/d/1fBh4fg0uEF5XfJSwoc8w7nBwwCj1bMTn/view?usp=share_link
+  archived:
+    - name: 0.16.0
+      downloads:
+        windows: https://drive.google.com/file/d/1rony4-96lThJZcHtTtFeOpojxAzfDR6z/view?usp=share_link

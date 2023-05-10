@@ -1,0 +1,78 @@
+---
+layout: default
+---
+
+
+{% assign current = site.data.software[page.product].current %}
+{% assign archive = site.data.software[page.product].archived %}
+
+
+{{ content }}
+
+<h2>Latest Downloads</h2>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Version</th>
+            <th>Windows</th>
+            <th>Linux</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in current %}
+        <tr>
+            <td>{{ item.name | markdownify | remove: "<p>" | remove: "</p>" }}</td>
+            <td>
+                {% if item.downloads.windows %}
+                <a href="{{ item.downloads.windows }}">Download</a></td>
+                {% else %}
+                <em>Unavailable</em>
+                {% endif %}
+            <td>
+                {% if item.downloads.linux %}
+                <a href="{{ item.downloads.linux }}">Download</a>
+                {% else %}
+                <em>Unavailable</em>
+                {% endif %}
+
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+{% if archive %}
+<h2>Archive</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Version</th>
+            <th>Windows</th>
+            <th>Linux</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in archive %}
+        <tr>
+            <td>{{ item.name | markdownify | remove: "<p>" | remove: "</p>" }}</td>
+            <td>
+                {% if item.downloads.windows %}
+                <a href="{{ item.downloads.windows }}">Download</a></td>
+                {% else %}
+                <em>Unavailable</em>
+                {% endif %}
+            <td>
+                {% if item.downloads.linux %}
+                <a href="{{ item.downloads.linux }}">Download</a>
+                {% else %}
+                <em>Unavailable</em>
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endif %}
