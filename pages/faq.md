@@ -2,7 +2,7 @@
 layout: default
 title: FAQ
 permalink: /faq/
-nav_order: 4
+nav_order: 0
 ---
 
 Our FAQ/Troubleshooting page is a compilation of the most commonly asked questions and issues that our customers have encountered while using our products.
