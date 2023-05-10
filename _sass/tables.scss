@@ -23,7 +23,6 @@ td {
 
   min-width: 120px;
   padding: $sp-2 $sp-3;
-  background-color: $table-background-color;
   border-bottom: $border rgba($border-color, 0.5);
   border-left: $border $border-color;
 
@@ -44,6 +43,13 @@ tbody {
         padding-bottom: $sp-3;
       }
     }
+    &:nth-child(odd) {
+      background-color: $table-background-color;
+    }
+    &:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
   }
 }
 
