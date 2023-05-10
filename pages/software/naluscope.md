@@ -21,4 +21,4 @@ The NaluScope Manual is available as a PDF for each board model. The manual nota
 - A user guide
 - Troubleshooting tips
 
-Please visit the [download page](/board/) for your board to download the manual.
+Please visit the [download page](/boards/) for your board to download the manual.
