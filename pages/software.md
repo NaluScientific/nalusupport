@@ -4,16 +4,15 @@ permalink: /software/
 layout: single
 ---
 
+On this page, you will find a comprehensive list of software downloads organized by product category and version number. Our downloads are user-friendly and easy to install, so that you can get up and running with your new software in no time.
+
+If you have any questions about our software, or need assistance with installation, please don't hesitate to [contact us](/contact/). We are always happy to help you get the most out of our products.
+
 {% assign naluscope = site.data.software_versions.naluscope %}
 {% assign naludaq_rs = site.data.software_versions.naludaq_rs %}
 
 {% assign naluscope_cols = "Version;Download;Manual" | split: ";" %}
 {% assign naludaq_rs_cols = "Version;Download" | split: ";" %}
-
-
-
-
-
 
 ## NaluScope
 

@@ -7,6 +7,9 @@ toc_label: Jump To...
 toc_sticky: true
 ---
 
+Our FAQ/Troubleshooting page is a compilation of the most commonly asked questions and issues that our customers have encountered while using our products.
+We have provided detailed solutions and step-by-step instructions for each problem, so that our customers can get back to their research as quickly as possible.
+
 ## General Questions
 
 ### How Do I Request Support?
