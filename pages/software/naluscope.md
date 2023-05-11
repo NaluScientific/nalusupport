@@ -12,6 +12,7 @@ The main objective of NaluScope is to offer a seamless experience for users to v
 
 Download the latest version of NaluScope for your operating system below.
 
+**Archive downloads** include previous versions of NaluScope and builds for older Linux distributions. These builds are not guaranteed to work for all distributions.
 
 ## Manual Download
 
