@@ -17,6 +17,6 @@ There is no installer for the backend; it may be placed in any suitable folder. 
 
 Python 3.7+ bindings for running the backend are available on [PyPI](https://pypi.org/project/naludaq-rs/):
 
-```bash
+```
 >> pip install naludaq_rs
 ```

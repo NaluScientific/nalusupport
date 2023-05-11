@@ -15,7 +15,7 @@ logo: "/assets/images/masthead.png"
 
 # -------------------------- Color Scheme --------------------------
 # Color scheme supports "light" (default) and "dark"
-color_scheme: light
+color_scheme: nalu
 
 # -------------------------- Search --------------------------
 # Enable or disable the site search
