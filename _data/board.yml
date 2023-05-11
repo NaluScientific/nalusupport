@@ -15,6 +15,18 @@ aardvarcv3:
     - name: Firmware v71
       url: https://drive.google.com/file/d/1tKL5B2GLRUwhy_OrFcBbSTyZADxN8ybb/view?usp=share_link
 
+aodsv2_eval:
+  current:
+    - name: Firmware
+      url:
+    - name: User Guide (PDF)
+      url:
+    - name: Quick Start Guide (PDF)
+      url:
+    - name: NaluScope vX.X.X.X Manual
+      url:
+  archived:
+
 aodsoc_aods:
   current:
     - name: OLEAS v3
@@ -26,6 +38,7 @@ aodsoc_aods:
     - name: NaluScope vX.X.X.X Manual
       url:
   archived:
+
 aodsoc_asoc:
   current:
     - name: Firmware v2
