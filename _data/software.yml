@@ -2,11 +2,15 @@
 
 naluscope:
   current:
+    - name: 0.11.1.0
+      downloads:
+        windows: TBD
+        linux: TBD
+  archived:
     - name: 0.11.0.0
       downloads:
         windows: https://drive.google.com/file/d/1-n_BQYrGZvjP4cyXHEeNWXKfsJzepwkJ/view?usp=share_link
         linux: https://drive.google.com/file/d/1s2mN5sNXHajR9Lthn0iCiXfOi7NreX0i/view?usp=share_link
-  archived:
     - name: 0.11.0.0 (Ubuntu 18.04)
       downloads:
         linux: https://drive.google.com/file/d/18DnpttRuCZfF4yaeu6EZ1xR7d6izVoi4/view?usp=share_link
