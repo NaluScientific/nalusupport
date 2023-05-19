@@ -88,8 +88,69 @@ These steps may also help if calibrations cannot be generated.
 
 ---
 
-### (Linux) Black Screen on Startup
+## Linux Troubleshooting
+
+### Black Screen on Startup
 
 This could be due to incompatible or improperly links to the graphics driver between
 Linux distributions. This can be solved by deleting `libstdc++.so.6` in the `nalu` folder,
 allowing the system to fall back on its own `libstdc++.so`.
+
+---
+
+### FTDI Devices Not Showing Up
+**Problem**: The device is showing up as only UART and not FTDI.
+
+This occurs when a service is converting the FTDI device into a COM PORT (UART).
+
+**Solution**: 
+Running the command: `sudo modprobe -r ftdi_sio` will stop the conversion of the FTDI device.
+You will have to run this command each time you plug the device/restart the computer.
+Consider adding a rule to prevent `ftdi_sio` from running.
+
+---
+
+### Error: DEVICE_NOT_FOUND
+**Problem**: Naluscope won't startup with error:
+```bash
+File "/build/naluscope/build/venvs/gui_build/lib/python3.9/site-packages/ftd2xx/ftd2xx.py", line 133, in call_ft
+ftd2xx.ftd2xx.DeviceError: DEVICE_NOT_FOUND
+```
+
+This error occurs when naluscope does not have permission to the FTDI device.
+
+**Solution**: 
+The permissions can be fixed by:
+
+Determine where the board's USB is mounted to. `lsusb` can be helpful.
+`lsusb` will output in the form:
+
+`Bus 002 Device 001: ID xxxx:xxxx (FTDI_DEVICE)`
+
+Use the Bus & Device number to locate where the device is mounted at the directory:
+
+`/dev/bus/usb/002/001` Replace 002 & 001 with your corresponding Bus and Device numbers.
+
+Set permissions for the files with `sudo chmod 777 /dev/bus/usb/path_to_your_usb`
+
+---
+
+### Error: Settings schema
+**Problem**: Naluscope crashes when trying to select a project directory. 
+```bash
+Settings schema 'org.gtk.Settings.FileChooser' does not contain a key named 'show-type-column'
+```
+
+This error occurs when you have an older version of GTK installed to your system, and the older schema
+does not have the keys needed by FileChooser.
+The solution will be following the steps from [here](https://gitlab.com/inkscape/inkscape/-/issues/1616)
+
+**Solution**: 
+Download the newer [schema file](https://gitlab.gnome.org/GNOME/gtk/-/blob/c925221aa804aec344bdfec148a17d23299b6c59/gtk/org.gtk.Settings.FileChooser.gschema.xml)
+and move the file to 
+
+`/usr/share/glib-2.0/schemas/org.gtk.Settings.FileChooser.gschema.xml`
+
+Run `glib-compile-schemas .` in the `/usr/share/glib-2.0/schemas/` directory.
+
+Last use Alt-F2 to run the command `r` to restart the gnome-shell
