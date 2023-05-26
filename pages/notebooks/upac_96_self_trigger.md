@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Upac 96 Self Trigger
+parent: Code Examples
 permalink: /notebooks/upac96selftrigger/
 nav_order: 8
 ---

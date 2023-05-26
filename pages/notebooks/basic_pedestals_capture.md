@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Basic Pedestals Capture
+parent: Code Examples
 permalink: /notebooks/basicpedestalscapture/
 nav_order: 2
 ---

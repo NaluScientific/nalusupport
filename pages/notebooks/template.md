@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Template
+parent: Code Examples
 permalink: /notebooks/template/
 nav_order: 5
 ---

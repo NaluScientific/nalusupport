@@ -15,7 +15,7 @@ def main():
     for notebook in file_paths:
         notebook_path = folder_path / notebook
         _call(
-                ["jupyter", "nbconvert", notebook_path, "--to", "html", "--template", "classic"],
+                ["jupyter", "nbconvert", notebook_path, "--to", "html"],
                 "Building manual...",
                 f"Could not build manual.",
             )
@@ -26,6 +26,7 @@ def main():
             "---\n",
             "layout: default\n",
             f"title: {readable_notebook}\n",
+            "parent: Code Examples\n",
             f"permalink: /notebooks/{notebook_link}/\n",
             f"nav_order: {nav_order}\n",
             "---\n",

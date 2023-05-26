@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Upac 96 Capture
+parent: Code Examples
 permalink: /notebooks/upac96capture/
 nav_order: 7
 ---
