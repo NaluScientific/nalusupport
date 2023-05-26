@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Upac 96 Capture
-permalink: /upac96capture/
-nav_order: 6
+permalink: boards/upac96capture/
+nav_order: 7
 ---
-{% include notebook.html path='notebooks\upac_96_capture.html' %}
+{% include notebook.html path="_includes\notebooks\upac_96_capture.html" %}

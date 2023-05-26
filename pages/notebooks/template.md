@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Template
-permalink: /template/
-nav_order: 4
+permalink: boards/template/
+nav_order: 5
 ---
-{% include notebook.html path='notebooks\template.html' %}
+{% include notebook.html path="_includes\notebooks\template.html" %}

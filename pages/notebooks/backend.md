@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Backend
-permalink: /backend/
-nav_order: 0
+permalink: boards/backend/
+nav_order: 1
 ---
-{% include notebook.html path='notebooks\backend.html' %}
+{% include notebook.html path="_includes\notebooks\backend.html" %}

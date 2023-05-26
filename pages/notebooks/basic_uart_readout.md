@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Basic Uart Readout
-permalink: /basicuartreadout/
-nav_order: 2
+permalink: boards/basicuartreadout/
+nav_order: 3
 ---
-{% include notebook.html path='notebooks\basic_uart_readout.html' %}
+{% include notebook.html path="_includes\notebooks\basic_uart_readout.html" %}
