@@ -1,0 +1,8 @@
+<!-- {% include notebook.html path="/notebooks/basic_pedetals_capture.html" %} -->
+<div class="jupyter-notebook">
+    {% capture notebook_content %}
+      {% include_relative {{ include.path }} %}
+    {% endcapture %}
+  
+    {{ notebook_content  | remove: "<!DOCTYPE html>" | remove: "list-style: decimal;" }}
+</div>
