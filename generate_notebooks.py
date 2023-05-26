@@ -26,7 +26,7 @@ def main():
             "---\n",
             "layout: default\n",
             f"title: {readable_notebook}\n",
-            f"permalink: boards/{notebook_link}/\n",
+            f"permalink: notebooks/{notebook_link}/\n",
             f"nav_order: {nav_order}\n",
             "---\n",
             f"{{% include notebook.html path=\"{html_path}\" %}}",

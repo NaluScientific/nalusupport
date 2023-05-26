@@ -1,7 +1,7 @@
 
 <div class="jupyter-notebook">
     {% capture notebook_content %}
-      {% include_relative {{ include.path }} %}
+      {% include {{ include.path }} %}
     {% endcapture %}
   
     {{ notebook_content  | remove: "<!DOCTYPE html>" | remove: "list-style: decimal;" }}
