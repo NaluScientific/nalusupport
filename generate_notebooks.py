@@ -21,7 +21,7 @@ def main():
             )
         readable_notebook = str(notebook).split(".ipynb")[0].replace("_", " ").title()
         notebook_link = str(notebook).split(".ipynb")[0].replace("_", "")
-        html_path = str(notebook_path).replace("ipynb", "html")
+        html_path = str(notebook_path).replace("ipynb", "html").replace("\\", "/")
         MARKDOWN_FILE = [
             "---\n",
             "layout: default\n",
