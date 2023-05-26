@@ -11,11 +11,11 @@ def main():
     folder_path = args.folder
     # output_path = args.output
     file_paths = [f for f in os.listdir(folder_path) if folder_path.joinpath(f).suffix == ".ipynb"]
-    nav_order = 0
+    nav_order = 1
     for notebook in file_paths:
         notebook_path = folder_path / notebook
         _call(
-                ["jupyter", "nbconvert", notebook_path, "--to", "html"],
+                ["jupyter", "nbconvert", notebook_path, "--to", "html", "--template", "classic"],
                 "Building manual...",
                 f"Could not build manual.",
             )
@@ -26,10 +26,10 @@ def main():
             "---\n",
             "layout: default\n",
             f"title: {readable_notebook}\n",
-            f"permalink: /{notebook_link}/\n",
+            f"permalink: boards/{notebook_link}/\n",
             f"nav_order: {nav_order}\n",
             "---\n",
-            f"{{% include notebook.html path='{html_path}' %}}",
+            f"{{% include notebook.html path=\"{html_path}\" %}}",
             ]
         nav_order += 1
         with open(f"{PAGES_PATH}/{str(notebook).removesuffix('ipynb')}md", "w") as file:
