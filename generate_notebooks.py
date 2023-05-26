@@ -26,10 +26,10 @@ def main():
             "---\n",
             "layout: default\n",
             f"title: {readable_notebook}\n",
-            f"permalink: notebooks/{notebook_link}/\n",
+            f"permalink: /notebooks/{notebook_link}/\n",
             f"nav_order: {nav_order}\n",
             "---\n",
-            f"{{% include notebook.html path=\"/{html_path}\" %}}",
+            f"{{% include notebook.html path=\"{html_path}\" %}}",
             ]
         nav_order += 1
         with open(f"{PAGES_PATH}/{str(notebook).removesuffix('ipynb')}md", "w") as file:
