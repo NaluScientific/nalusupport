@@ -26,13 +26,13 @@ layout: default
             <td>{{ item.name | markdownify | remove: "<p>" | remove: "</p>" }}</td>
             <td>
                 {% if item.downloads.windows %}
-                <a href="{{ item.downloads.windows }}">Download</a></td>
+                <a href="{{ item.downloads.windows }}" target="_blank">Download</a></td>
                 {% else %}
                 <em>Unavailable</em>
                 {% endif %}
             <td>
                 {% if item.downloads.linux %}
-                <a href="{{ item.downloads.linux }}">Download</a>
+                <a href="{{ item.downloads.linux }}" target="_blank">Download</a>
                 {% else %}
                 <em>Unavailable</em>
                 {% endif %}
@@ -60,13 +60,13 @@ layout: default
             <td>{{ item.name | markdownify | remove: "<p>" | remove: "</p>" }}</td>
             <td>
                 {% if item.downloads.windows %}
-                <a href="{{ item.downloads.windows }}">Download</a></td>
+                <a href="{{ item.downloads.windows }}" target="_blank">Download</a></td>
                 {% else %}
                 <em>Unavailable</em>
                 {% endif %}
             <td>
                 {% if item.downloads.linux %}
-                <a href="{{ item.downloads.linux }}">Download</a>
+                <a href="{{ item.downloads.linux }}" target="_blank">Download</a>
                 {% else %}
                 <em>Unavailable</em>
                 {% endif %}

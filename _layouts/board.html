@@ -16,7 +16,13 @@ layout: default
     <tbody>
         {% for item in current %}
         <tr>
-            <td><a href="{{ item.url }}">{{ item.name | markdownify | remove: "<p>" | remove: "</p>" }}</a></td>
+            <td>
+                {% if item.url %}
+                    <a href="{{ item.url }}" target="_blank">{{ item.name | markdownify | remove: "<p>" | remove: "</p>" }}</a>
+                {% else %}
+                    {{ item.name | markdownify | remove: "<p>" | remove: "</p>" }} <em>(Unavailable)</em>
+                {% endif %}
+            </td>
         </tr>
         {% endfor %}
     </tbody>
@@ -30,7 +36,13 @@ layout: default
     <tbody>
         {% for item in archive %}
         <tr>
-            <td><a href="{{ item.url }}">{{ item.name | markdownify | remove: "<p>" | remove: "</p>"}}</a></td>
+            <td>
+                {% if item.url %}
+                    <a href="{{ item.url }}" target="_blank">{{ item.name | markdownify | remove: "<p>" | remove: "</p>" }}</a>
+                {% else %}
+                    {{ item.name | markdownify | remove: "<p>" | remove: "</p>" }} <em>(Unavailable)</em>
+                {% endif %}
+            </td>
         </tr>
         {% endfor %}
     </tbody>

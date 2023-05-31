@@ -2,21 +2,22 @@
 
 naluscope:
   current:
+    - name: 0.12.2
+      downloads:
+        windows: https://drive.google.com/file/d/1h_IJPpJrCU35hO2zVl1XrOt56njvMDcB/view?usp=share_link
+  archived:
     - name: 0.12.1
       downloads:
         windows: https://drive.google.com/file/d/1bGbRmYYwOJXRazDwr5wm7jmqyFS3rYQe/view?usp=share_link
     - name: 0.12.0
       downloads:
-        linux: https://drive.google.com/file/d/1fWO9Nx1DCCkNE8giis7dk6hLg68CQjHu/view?usp=share_link
-  archived:
-    - name: 0.12.0
-      downloads:
         windows: https://drive.google.com/file/d/1AgZc-a_RmyuXnO2-ri8Zz_zE0DlyDFv4/view?usp=share_link
-    - name: 0.11.0.0
+        linux: https://drive.google.com/file/d/1fWO9Nx1DCCkNE8giis7dk6hLg68CQjHu/view?usp=share_link
+    - name: 0.11.0
       downloads:
         windows: https://drive.google.com/file/d/1-n_BQYrGZvjP4cyXHEeNWXKfsJzepwkJ/view?usp=share_link
         linux: https://drive.google.com/file/d/1s2mN5sNXHajR9Lthn0iCiXfOi7NreX0i/view?usp=share_link
-    - name: 0.11.0.0 (Ubuntu 18.04)
+    - name: 0.11.0 (Ubuntu 18.04)
       downloads:
         linux: https://drive.google.com/file/d/18DnpttRuCZfF4yaeu6EZ1xR7d6izVoi4/view?usp=share_link
     - name: 0.9.0

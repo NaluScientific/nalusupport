@@ -1,13 +1,13 @@
 
 aardvarcv3:
   current:
+    - name: NaluScope v0.12.2 Manual
+      url: https://drive.google.com/file/d/1ahkV52AA9r13CtXMGYEccGlIi9SKpE03/view?usp=share_link
     - name: Firmware v86
       url: https://drive.google.com/file/d/18ARffbSS-GGTUndroZDIkKqRx5iK-FvA/view?usp=share_link
     - name: User Guide (PDF)
       url:
     - name: Quick Start Guide (PDF)
-      url:
-    - name: NaluScope vX.X.X.X Manual
       url:
   archived:
     - name: Firmware v82
@@ -17,49 +17,49 @@ aardvarcv3:
 
 aodsv2_eval:
   current:
-    - name: Firmware
-      url:
+    - name: NaluScope v0.12.2 Manual
+      url: https://drive.google.com/file/d/1mvkMu4O3by0cGyRVdkQvSQvbwZCa6tvV/view?usp=share_link
+    - name: Firmware v57
+      url: https://drive.google.com/file/d/1f-kw6w8Q7O83kXTRBgGZmw3d-KL9ADkF/view?usp=share_link
     - name: User Guide (PDF)
       url:
     - name: Quick Start Guide (PDF)
-      url:
-    - name: NaluScope vX.X.X.X Manual
       url:
   archived:
 
 aodsoc_aods:
   current:
+    - name: NaluScope v0.12.2 Manual
+      url: https://drive.google.com/file/d/10e5yaxvoMZn5CdkqYn0pbXq5_WmU3i9c/view?usp=share_link
     - name: OLEAS v3
       url: https://drive.google.com/file/d/1bv2x8sY5ONaVQU13RRGzWnKFiqjYicKd/view?usp=share_link
     - name: User Guide (PDF)
       url:
     - name: Quick Start Guide (PDF)
       url:
-    - name: NaluScope vX.X.X.X Manual
-      url:
   archived:
 
 aodsoc_asoc:
   current:
+    - name: NaluScope v0.12.2 Manual
+      url: https://drive.google.com/file/d/13anmoHr5EEShAOE_0LGk-LntQtTjniD2/view?usp=share_link
     - name: Firmware v2
       url: https://drive.google.com/file/d/1VC_jE59mspUSEQOrga0Z6lJBhgxL3q7V/view?usp=share_link
     - name: User Guide (PDF)
       url:
     - name: Quick Start Guide (PDF)
       url:
-    - name: NaluScope vX.X.X.X Manual
-      url:
   archived:
 
 asocv3:
   current:
+    - name: NaluScope v0.12.2 Manual
+      url: https://drive.google.com/file/d/1bvT1J4eU1_FW4rCPIaiL7VUCa8sZ3CR3/view?usp=share_link
     - name: Firmware v64
       url: https://drive.google.com/file/d/1Zq_17IMPaCbFof8yesXuySVYPMaxySU-/view?usp=share_link
     - name: User Guide (PDF)
       url:
     - name: Quick Start Guide (PDF)
-      url:
-    - name: NaluScope vX.X.X.X Manual
       url:
   archived:
     - name: Firmware v58
@@ -67,13 +67,13 @@ asocv3:
 
 hdsocv1_evalr2:
   current:
+    - name: NaluScope v0.12.2 Manual
+      url: https://drive.google.com/file/d/1ii9TNJxGRjzEr5pNqW9jzhy09YhUzxws/view?usp=share_link
     - name: Firmware v938
       url: https://drive.google.com/file/d/1XuZqh-2B6W-45gXsjthZWxVlDd_661E1/view?usp=share_link
     - name: User Guide (PDF)
       url:
     - name: Quick Start Guide (PDF)
-      url:
-    - name: NaluScope vX.X.X.X Manual
       url:
   archived:
     - name: Firmware v101
@@ -81,36 +81,36 @@ hdsocv1_evalr2:
 
 hiper:
   current:
+    - name: NaluScope vX.X.X.X Manual
+      url:
     - name: Firmware v105
       url: https://drive.google.com/file/d/1Zq_17IMPaCbFof8yesXuySVYPMaxySU-/view?usp=share_link
     - name: User Guide (PDF)
       url:
     - name: Quick Start Guide (PDF)
       url:
-    - name: NaluScope vX.X.X.X Manual
-      url:
 
 upaci:
   current:
+    - name: NaluScope vX.X.X.X Manual
+      url:
     - name: Firmware v1008
       url: https://drive.google.com/file/d/1snb9qlYWUnbi8a3fH2OiiiAkEg-XXJqg/view?usp=share_link
     - name: User Guide (PDF)
       url:
     - name: Quick Start Guide (PDF)
       url:
-    - name: NaluScope vX.X.X.X Manual
-      url:
   archived:
 
 upac96:
   current:
+    - name: NaluScope v0.12.2 Manual
+      url: https://drive.google.com/file/d/1c1ig_WyXNlSysxCuyMyj-wr7eVJu2C1t/view?usp=share_link
     - name: Firmware v911
       url: https://drive.google.com/file/d/1lIy_ARddNoiyRekwNgu8LbUPJ5esOmU5/view?usp=share_link
     - name: User Guide (PDF)
       url:
     - name: Quick Start Guide (PDF)
-      url:
-    - name: NaluScope vX.X.X.X Manual
       url:
   archived:
     - name: Firmware v907
