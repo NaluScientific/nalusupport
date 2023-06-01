@@ -9,7 +9,6 @@ PAGES_PATH = "pages/notebooks"
 def main():
     args = _parse_args()
     folder_path = args.folder
-    # output_path = args.output
     file_paths = [f for f in os.listdir(folder_path) if folder_path.joinpath(f).suffix == ".ipynb"]
     nav_order = 1
     for notebook in file_paths:
@@ -39,16 +38,9 @@ def main():
 def _parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "-o",
-        "--output",
-        help="PDF output file",
-        type=Path,
-        default=None,
-    )
-    parser.add_argument(
         "-f",
         "--folder",
-        help="PDF output folder",
+        help="Notebook folder",
         type=Path,
         default=None,
         required=True,
