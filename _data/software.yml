@@ -5,6 +5,7 @@ naluscope:
     - name: 0.12.2
       downloads:
         windows: https://drive.google.com/file/d/1h_IJPpJrCU35hO2zVl1XrOt56njvMDcB/view?usp=share_link
+        linux: https://drive.google.com/file/d/1yIl3pCg1Pen6fk2UnZVAoeSaHrok1Vr-/view?usp=share_link
   archived:
     - name: 0.12.1
       downloads:
@@ -17,9 +18,6 @@ naluscope:
       downloads:
         windows: https://drive.google.com/file/d/1-n_BQYrGZvjP4cyXHEeNWXKfsJzepwkJ/view?usp=share_link
         linux: https://drive.google.com/file/d/1s2mN5sNXHajR9Lthn0iCiXfOi7NreX0i/view?usp=share_link
-    - name: 0.11.0 (Ubuntu 18.04)
-      downloads:
-        linux: https://drive.google.com/file/d/18DnpttRuCZfF4yaeu6EZ1xR7d6izVoi4/view?usp=share_link
     - name: 0.9.0
       downloads:
         windows: https://drive.google.com/file/d/1nPV9OGSwpM-qDMNtXcPpVct_tlkxIYZo/view?usp=share_link
