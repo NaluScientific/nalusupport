@@ -6,6 +6,10 @@ from pathlib import Path
 
 PAGES_PATH = "pages/notebooks"
 
+# Put all notebooks into the _includes/notebooks/ directory
+# Run python generate_notebooks.py -f _includes/notebooks
+# Notebooks will be converted to html and corresponding md files will be created at pages/notebooks
+
 def main():
     args = _parse_args()
     folder_path = args.folder
