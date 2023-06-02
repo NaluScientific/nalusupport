@@ -1,0 +1,32 @@
+
+<table>
+    <thead>
+        <tr>
+            <th>Version</th>
+            <th>Windows</th>
+            <th>Linux</th>
+            <th>Release Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in include.data %}
+        <tr>
+            <td>{{ item.name | markdownify | remove: "<p>" | remove: "</p>" }}</td>
+            <td>
+                {% if item.downloads.windows %}
+                <a href="{{ item.downloads.windows }}" target="_blank">Download</a></td>
+                {% else %}
+                <em>Unavailable</em>
+                {% endif %}
+            <td>
+                {% if item.downloads.linux %}
+                <a href="{{ item.downloads.linux }}" target="_blank">Download</a>
+                {% else %}
+                <em>Unavailable</em>
+                {% endif %}
+            </td>
+            <td>{{ item.date | markdownify | remove: "<p>" | remove: "</p>" }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

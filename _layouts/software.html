@@ -2,77 +2,14 @@
 layout: default
 ---
 
-
-{% assign current = site.data.software[page.product].current %}
-{% assign archive = site.data.software[page.product].archived %}
-
-
 {{ content }}
 
 <h2>Latest Downloads</h2>
+{% assign current = site.data.software[page.product].current %}
+{% include software_table.html data=current %}
 
-
-<table>
-    <thead>
-        <tr>
-            <th>Version</th>
-            <th>Windows</th>
-            <th>Linux</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for item in current %}
-        <tr>
-            <td>{{ item.name | markdownify | remove: "<p>" | remove: "</p>" }}</td>
-            <td>
-                {% if item.downloads.windows %}
-                <a href="{{ item.downloads.windows }}" target="_blank">Download</a></td>
-                {% else %}
-                <em>Unavailable</em>
-                {% endif %}
-            <td>
-                {% if item.downloads.linux %}
-                <a href="{{ item.downloads.linux }}" target="_blank">Download</a>
-                {% else %}
-                <em>Unavailable</em>
-                {% endif %}
-
-            </td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
-
-
+{% assign archive = site.data.software[page.product].archived %}
 {% if archive %}
-<h2>Archive</h2>
-<table>
-    <thead>
-        <tr>
-            <th>Version</th>
-            <th>Windows</th>
-            <th>Linux</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for item in archive %}
-        <tr>
-            <td>{{ item.name | markdownify | remove: "<p>" | remove: "</p>" }}</td>
-            <td>
-                {% if item.downloads.windows %}
-                <a href="{{ item.downloads.windows }}" target="_blank">Download</a></td>
-                {% else %}
-                <em>Unavailable</em>
-                {% endif %}
-            <td>
-                {% if item.downloads.linux %}
-                <a href="{{ item.downloads.linux }}" target="_blank">Download</a>
-                {% else %}
-                <em>Unavailable</em>
-                {% endif %}
-            </td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
+    <h2>Archive</h2>
+    {% include software_table.html data=archive %}
 {% endif %}
