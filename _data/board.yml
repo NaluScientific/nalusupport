@@ -63,8 +63,8 @@ asocv3:
   current:
     - name: NaluScope v0.13.0 Manual
       url: https://drive.google.com/file/d/1CxA7hmhTLzZh816chr9oujTFcE7unEdT/view?usp=share_link
-    - name: Firmware v64
-      url: https://drive.google.com/file/d/1Zq_17IMPaCbFof8yesXuySVYPMaxySU-/view?usp=share_link
+    - name: Firmware v67
+      url: https://drive.google.com/file/d/1O2p8uqYrdSXl4gS1kiv7gjW5lDt1wfhY/view?usp=drive_link
     - name: User Guide (PDF)
       url:
     - name: Quick Start Guide (PDF)
@@ -72,6 +72,8 @@ asocv3:
   archived:
     - name: NaluScope v0.12.2 Manual
       url: https://drive.google.com/file/d/1bvT1J4eU1_FW4rCPIaiL7VUCa8sZ3CR3/view?usp=share_link
+    - name: Firmware v64
+      url: https://drive.google.com/file/d/1Zq_17IMPaCbFof8yesXuySVYPMaxySU-/view?usp=share_link
     - name: Firmware v58
       url: https://drive.google.com/file/d/12kGrLGnFpF5DTh-L-Wus5dwBXLajoqT0/view?usp=share_link
 
