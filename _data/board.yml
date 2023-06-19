@@ -35,7 +35,7 @@ aodsoc_aods:
   current:
     - name: NaluScope v0.13.0 Manual
       url: https://drive.google.com/file/d/1Ps5wgoxV59YzcyFArZ8vSkX2LCqaIy9F/view?usp=share_link
-    - name: OLEAS v3
+    - name: Firmware v3
       url: https://drive.google.com/file/d/1bv2x8sY5ONaVQU13RRGzWnKFiqjYicKd/view?usp=share_link
     - name: User Guide (PDF)
       url:
@@ -103,6 +103,20 @@ hiper:
       url:
     - name: Quick Start Guide (PDF)
       url:
+
+trbhmv1:
+  current:
+    - name: NaluScope v0.13.0 Manual
+      url: https://drive.google.com/file/d/1ioSNq1y9z8PO9HMWCUHkiAyoB898ZCE0/view?usp=drive_link
+    - name: Firmware
+      url:
+    - name: User Guide (PDF)
+      url:
+    - name: Quick Start Guide (PDF)
+      url:
+  archived:
+    - name: NaluScope v0.12.2 Manual
+      url: https://drive.google.com/file/d/1ugPvGRmQOs2Q8nha6V88ctYdUiRignfe/view?usp=drive_link
 
 upaci:
   current:
