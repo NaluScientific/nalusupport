@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+
+
+{% assign current = site.data.documentation[page.product].current %}
+{% assign archive = site.data.documentation[page.product].archived %}
+
+{{ content }}
+
+<h2>Download</h2>
+
+
+<table>
+    <tbody>
+        {% for item in current %}
+        <tr>
+            <td>
+                {% if item.url %}
+                    <a href="{{ item.url }}" target="_blank">{{ item.name | markdownify | remove: "<p>" | remove: "</p>" }}</a>
+                {% else %}
+                    {{ item.name | markdownify | remove: "<p>" | remove: "</p>" }} <em>(Unavailable)</em>
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+<h2>Archive</h2>
+
+
+<table>
+    <tbody>
+        {% for item in archive %}
+        <tr>
+            <td>
+                {% if item.url %}
+                    <a href="{{ item.url }}" target="_blank">{{ item.name | markdownify | remove: "<p>" | remove: "</p>" }}</a>
+                {% else %}
+                    {{ item.name | markdownify | remove: "<p>" | remove: "</p>" }} <em>(Unavailable)</em>
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
