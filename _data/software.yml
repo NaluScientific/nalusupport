@@ -60,3 +60,11 @@ backend:
     # - name: 0.16.0
     #   downloads:
     #     windows: https://drive.google.com/file/d/1rony4-96lThJZcHtTtFeOpojxAzfDR6z/view?usp=share_link
+
+
+nalucli:
+  current:
+    - name: 0.0.1
+      date: "2023-07-15"
+      downloads:
+        windows:
