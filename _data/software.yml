@@ -6,7 +6,8 @@ naluscope:
     - name: 0.14.0
       date: "2023-07-23"
       downloads:
-        windows: https://drive.google.com/file/d/1-qt534dP4yN1Z7sQwgDnwiMbKU-ct8uz/view?usp=drive_link
+        windows: https://github.com/NaluScientific/naluscope/releases/download/v0.14.0/NaluScope.Installer-0.14.0.0.exe
+        windows-alt: https://drive.google.com/file/d/1-qt534dP4yN1Z7sQwgDnwiMbKU-ct8uz/view?usp=drive_link
     - name: 0.13.0
       date: "2023-06-01"
       downloads:
