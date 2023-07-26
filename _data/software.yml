@@ -62,9 +62,9 @@ backend:
     #     windows: https://drive.google.com/file/d/1rony4-96lThJZcHtTtFeOpojxAzfDR6z/view?usp=share_link
 
 
-nalucli:
+naluexporter:
   current:
-    - name: 0.0.1
-      date: "2023-07-15"
+    - name: 0.1.0
+      date: "2023-07-25"
       downloads:
-        windows:
+        windows: https://drive.google.com/file/d/1sie2-3XMZp0t7IwACXZO4Q_PaS12GR0s/view?usp=drive_link
