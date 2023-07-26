@@ -1,8 +1,7 @@
-
 aardvarcv3:
   current:
-    - name: NaluScope v0.14.0 Manual
-      url: https://drive.google.com/file/d/1BolB6bSN-r5pf-80sJH81WLGXg-AhLh_/view?usp=drive_link
+    - name: NaluScope v0.14.1 Manual
+      url: https://drive.google.com/file/d/1MGzABk_In5M2sIDHgf_UeluWTcmakYy3/view?usp=drive_link
     - name: Firmware v86
       url: https://drive.google.com/file/d/18ARffbSS-GGTUndroZDIkKqRx5iK-FvA/view?usp=share_link
     - name: User Guide (PDF)
@@ -10,6 +9,8 @@ aardvarcv3:
     - name: Quick Start Guide (PDF)
       url:
   archived:
+    - name: NaluScope v0.14.0 Manual
+      url: https://drive.google.com/file/d/1BolB6bSN-r5pf-80sJH81WLGXg-AhLh_/view?usp=drive_link
     - name: NaluScope v0.13.0 Manual
       url: https://drive.google.com/file/d/1RHcgTFiWtU9d3zvht1g_EuwRk9uysjwj/view?usp=share_link
     - name: NaluScope v0.12.2 Manual
@@ -21,8 +22,8 @@ aardvarcv3:
 
 aodsv2_eval:
   current:
-    - name: NaluScope v0.14.0 Manual
-      url: https://drive.google.com/file/d/1VS-HvpxPr-dehajAlRz8-qYLu37Z_lBA/view?usp=drive_link
+    - name: NaluScope v0.14.1 Manual
+      url: https://drive.google.com/file/d/1NTMI46HhzZP06UkncngHQMZ37E48R6kO/view?usp=drive_link
     - name: Firmware v57
       url: https://drive.google.com/file/d/1f-kw6w8Q7O83kXTRBgGZmw3d-KL9ADkF/view?usp=share_link
     - name: User Guide (PDF)
@@ -30,6 +31,8 @@ aodsv2_eval:
     - name: Quick Start Guide (PDF)
       url:
   archived:
+    - name: NaluScope v0.14.0 Manual
+      url: https://drive.google.com/file/d/1VS-HvpxPr-dehajAlRz8-qYLu37Z_lBA/view?usp=drive_link
     - name: NaluScope v0.13.0 Manual
       url: https://drive.google.com/file/d/1N80ot9hAPXhLDb1iIjdsNPONePL99zw9/view?usp=share_link
     - name: NaluScope v0.12.2 Manual
@@ -37,8 +40,8 @@ aodsv2_eval:
 
 aodsoc_aods:
   current:
-    - name: NaluScope v0.14.0 Manual
-      url: https://drive.google.com/file/d/1MZNAD2JUyxbK2-nlwavPvjpaZoT28-Lz/view?usp=drive_link
+    - name: NaluScope v0.14.1 Manual
+      url: https://drive.google.com/file/d/1UrYkvP5MdhY6ylgvSmfVQTUUfJkCDzha/view?usp=drive_link
     - name: Firmware v3
       url: https://drive.google.com/file/d/1bv2x8sY5ONaVQU13RRGzWnKFiqjYicKd/view?usp=share_link
     - name: User Guide (PDF)
@@ -46,6 +49,8 @@ aodsoc_aods:
     - name: Quick Start Guide (PDF)
       url:
   archived:
+    - name: NaluScope v0.14.0 Manual
+      url: https://drive.google.com/file/d/1MZNAD2JUyxbK2-nlwavPvjpaZoT28-Lz/view?usp=drive_link
     - name: NaluScope v0.13.0 Manual
       url: https://drive.google.com/file/d/1htbbkwJNQBHZoXJSV_79sgN8S3xxIiqp/view?usp=share_link
     - name: NaluScope v0.12.2 Manual
@@ -53,8 +58,8 @@ aodsoc_aods:
 
 aodsoc_asoc:
   current:
-    - name: NaluScope v0.14.0 Manual
-      url: https://drive.google.com/file/d/1IgmZi4bLfyry0-58SnOlVwuH8P8rCyHa/view?usp=drive_link
+    - name: NaluScope v0.14.1 Manual
+      url: https://drive.google.com/file/d/1E_vSy5hYpJf-cF1EatxRKlZldUSYFR6E/view?usp=drive_link
     - name: Firmware v2
       url: https://drive.google.com/file/d/1VC_jE59mspUSEQOrga0Z6lJBhgxL3q7V/view?usp=share_link
     - name: User Guide (PDF)
@@ -62,6 +67,8 @@ aodsoc_asoc:
     - name: Quick Start Guide (PDF)
       url:
   archived:
+    - name: NaluScope v0.14.0 Manual
+      url: https://drive.google.com/file/d/1IgmZi4bLfyry0-58SnOlVwuH8P8rCyHa/view?usp=drive_link
     - name: NaluScope v0.13.0 Manual
       url: https://drive.google.com/file/d/1htbbkwJNQBHZoXJSV_79sgN8S3xxIiqp/view?usp=share_link
     - name: NaluScope v0.12.2 Manual
@@ -69,8 +76,8 @@ aodsoc_asoc:
 
 asocv3:
   current:
-    - name: NaluScope v0.14.0 Manual
-      url: https://drive.google.com/file/d/1MZCT7j1WeELM9GlppdnEaBjFluGWPgzb/view?usp=drive_link
+    - name: NaluScope v0.14.1 Manual
+      url: https://drive.google.com/file/d/1S1fDFVmSnDkJeGdgazxdmbRDyK9dsE0o/view?usp=drive_link
     - name: Firmware v67
       url: https://drive.google.com/file/d/1O2p8uqYrdSXl4gS1kiv7gjW5lDt1wfhY/view?usp=drive_link
     - name: User Guide (PDF)
@@ -78,6 +85,8 @@ asocv3:
     - name: Quick Start Guide (PDF)
       url:
   archived:
+    - name: NaluScope v0.14.0 Manual
+      url: https://drive.google.com/file/d/1MZCT7j1WeELM9GlppdnEaBjFluGWPgzb/view?usp=drive_link
     - name: NaluScope v0.13.0 Manual
       url: https://drive.google.com/file/d/1CxA7hmhTLzZh816chr9oujTFcE7unEdT/view?usp=share_link
     - name: NaluScope v0.12.2 Manual
@@ -89,8 +98,8 @@ asocv3:
 
 hdsocv1_evalr2:
   current:
-    - name: NaluScope v0.14.0 Manual
-      url: https://drive.google.com/file/d/1k1T_oEUcNOVV_-Ot9uaOZi6R4Tm3-AOX/view?usp=drive_link
+    - name: NaluScope v0.14.1 Manual
+      url: https://drive.google.com/file/d/1nDhMJH-LoKaSioIMOcArAtZRiS9g_gxc/view?usp=drive_link
     - name: Firmware v938
       url: https://drive.google.com/file/d/1XuZqh-2B6W-45gXsjthZWxVlDd_661E1/view?usp=share_link
     - name: User Guide (PDF)
@@ -98,6 +107,8 @@ hdsocv1_evalr2:
     - name: Quick Start Guide (PDF)
       url:
   archived:
+    - name: NaluScope v0.14.0 Manual
+      url: https://drive.google.com/file/d/1k1T_oEUcNOVV_-Ot9uaOZi6R4Tm3-AOX/view?usp=drive_link
     - name: NaluScope v0.13.0 Manual
       url: https://drive.google.com/file/d/1V7yAV1dIHmoFN_bPD9qnYAifxl1i69bK/view?usp=share_link
     - name: NaluScope v0.12.2 Manual
@@ -118,8 +129,8 @@ hiper:
 
 trbhmv1:
   current:
-    - name: NaluScope v0.14.0 Manual
-      url: https://drive.google.com/file/d/1VEAIOqGN7tcFkQ0VwAxgESN8kHp2N_vZ/view?usp=drive_link
+    - name: NaluScope v0.14.1 Manual
+      url: https://drive.google.com/file/d/1d9u_LaSATaLVt-7FQEYbcZXIUCDobGqx/view?usp=drive_link
     - name: Firmware
       url:
     - name: User Guide (PDF)
@@ -127,27 +138,17 @@ trbhmv1:
     - name: Quick Start Guide (PDF)
       url:
   archived:
+    - name: NaluScope v0.14.0 Manual
+      url: https://drive.google.com/file/d/1VEAIOqGN7tcFkQ0VwAxgESN8kHp2N_vZ/view?usp=drive_link
     - name: NaluScope v0.13.0 Manual
       url: https://drive.google.com/file/d/1ioSNq1y9z8PO9HMWCUHkiAyoB898ZCE0/view?usp=drive_link
     - name: NaluScope v0.12.2 Manual
       url: https://drive.google.com/file/d/1ugPvGRmQOs2Q8nha6V88ctYdUiRignfe/view?usp=drive_link
 
-upaci:
-  current:
-    - name: NaluScope vX.X.X.X Manual
-      url:
-    - name: Firmware v1008
-      url: https://drive.google.com/file/d/1snb9qlYWUnbi8a3fH2OiiiAkEg-XXJqg/view?usp=share_link
-    - name: User Guide (PDF)
-      url:
-    - name: Quick Start Guide (PDF)
-      url:
-  archived:
-
 upac96:
   current:
-    - name: NaluScope v0.14.0 Manual
-      url: https://drive.google.com/file/d/1PI3Hl-aIzwaEpE2ei8TUWkWxhlQXg5mH/view?usp=drive_link
+    - name: NaluScope v0.14.1 Manual
+      url: https://drive.google.com/file/d/1o7r_o80yaWNogOy38Uk8kkrVkfnEn-JP/view?usp=drive_link
     - name: Firmware v911
       url: https://drive.google.com/file/d/1lIy_ARddNoiyRekwNgu8LbUPJ5esOmU5/view?usp=share_link
     - name: User Guide (PDF)
@@ -155,6 +156,8 @@ upac96:
     - name: Quick Start Guide (PDF)
       url:
   archived:
+    - name: NaluScope v0.14.0 Manual
+      url: https://drive.google.com/file/d/1PI3Hl-aIzwaEpE2ei8TUWkWxhlQXg5mH/view?usp=drive_link
     - name: NaluScope v0.13.0 Manual
       url: https://drive.google.com/file/d/1-SPzDOwDSfNt1LBCWhWHzI8mPSgT7xN8/view?usp=share_link
     - name: NaluScope v0.12.2 Manual
