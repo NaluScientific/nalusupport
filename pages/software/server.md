@@ -4,7 +4,7 @@ parent: Software Downloads
 product: backend
 permalink: /software/server/
 layout: software
-nav_order: 2
+nav_order: 3
 ---
 
 The standalone server is a separate distributable which can be run separately from NaluScope. It is used in combination with NaluScope for high-speed data acquisition from the hardware. The server comes bundled with NaluScope and using the standalone version is optional. However, using the standalone server offers more flexibility in terms of hardware setup, as it can be run on a separate machine from NaluScope.
