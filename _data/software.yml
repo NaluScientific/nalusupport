@@ -50,7 +50,7 @@ backend:
       date: "2023-07-26"
       downloads:
         windows: https://drive.google.com/file/d/1uSpRJKmLa6uGVj3e-F2LJnfP39brlOHj/view?usp=drive_link
-        linux:
+        linux: https://drive.google.com/file/d/1RZWIAzaoLXHuRsVeS_pAS5SIYhbycjol/view?usp=drive_link
   archived:
     - name: 0.1.8
       date: "2023-04-28"
