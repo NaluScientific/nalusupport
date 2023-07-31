@@ -20,8 +20,10 @@ The Nalu Exporter tool is run from the command prompt (Windows). To open the com
 To export data to CSV:
 
 ```
-naluexporter export PATH/TO/ACQUISITION --output PATH/TO/OUTPUT/DIR -p
+naluexporter_{VERSION} export PATH/TO/ACQUISITION --output PATH/TO/OUTPUT/DIR -p
 ```
+
+Where `VERSION` is the version component of the Nalu Exporter file name.
 
 The `-p`/`--pedestals` flag indicates the data should be exported with pedestals correction. It may be omitted if uncorrected data is desired, or if the acquisition does not contain pedestals.
 
@@ -31,7 +33,7 @@ The `-o`/`--output` indicates the output directory for CSV files. If omitted, th
 To list acquisitions in a directory:
 
 ```
-naluexporter list DIRECTORY
+naluexporter_{VERSION} list DIRECTORY
 ```
 
 The `DIRECTORY` argument is optional; if omitted, the current working directory will be used. The command will display a table of acquisitions in the directory along with some relevant information.
