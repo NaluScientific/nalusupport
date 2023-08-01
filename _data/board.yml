@@ -2,8 +2,8 @@ aardvarcv3:
   current:
     - name: NaluScope v0.14.1 Manual
       url: https://drive.google.com/file/d/1MGzABk_In5M2sIDHgf_UeluWTcmakYy3/view?usp=drive_link
-    - name: Firmware v86
-      url: https://drive.google.com/file/d/18ARffbSS-GGTUndroZDIkKqRx5iK-FvA/view?usp=share_link
+    - name: Firmware v96 (192.168.1.68)
+      url: https://drive.google.com/file/d/1ULXABcLwraOW1E2y6IwO6Mn-i-hHZRCP/view?usp=drive_link
     - name: User Guide (PDF)
       url:
     - name: Quick Start Guide (PDF)
@@ -15,6 +15,8 @@ aardvarcv3:
       url: https://drive.google.com/file/d/1RHcgTFiWtU9d3zvht1g_EuwRk9uysjwj/view?usp=share_link
     - name: NaluScope v0.12.2 Manual
       url: https://drive.google.com/file/d/1ahkV52AA9r13CtXMGYEccGlIi9SKpE03/view?usp=share_link
+    - name: Firmware v86
+      url: https://drive.google.com/file/d/18ARffbSS-GGTUndroZDIkKqRx5iK-FvA/view?usp=share_link
     - name: Firmware v82
       url: https://drive.google.com/file/d/1Fl94yZ3ajiUKXsrBSLTq3At9r7m0uRLK/view?usp=share_link
     - name: Firmware v71
