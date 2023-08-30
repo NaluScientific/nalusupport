@@ -19,4 +19,4 @@ jobs:
         run: |
           python -m pip install --user --upgrade pip
           python -m pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
-          python board_docs.py --inid ${{ variables.DRIVE_BOARD_DOCS_INPUT_FOLDER }} --outid ${{ variables.DRIVE_BOARD_DOCS_OUTPUT_FOLDER }} --credentials ${{ secrets.GOOGLE_DRIVE_CREDENTIALS }} --driveid ${{ variables.DRIVE_ID }}
+          python board_docs.py --inid ${{ vars.DRIVE_BOARD_DOCS_INPUT_FOLDER }} --outid ${{ vars.DRIVE_BOARD_DOCS_OUTPUT_FOLDER }} --credentials ${{ secrets.GOOGLE_DRIVE_CREDENTIALS }} --driveid ${{ vars.DRIVE_ID }}
