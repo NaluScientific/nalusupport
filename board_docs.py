@@ -16,8 +16,8 @@ def main():
     uploads them to the given folder
     """
     args = parse_args(sys.argv[1:])
-    folder_in_id = args.idin
-    folder_out_id = args.idout
+    folder_in_id = args.inid
+    folder_out_id = args.outid
     credentials = load_credentials(args.credentials)
 
     file_ids = get_file_ids(folder_in_id, credentials)
@@ -194,15 +194,15 @@ def parse_args(argv):
         help="Google Service Account Credentials",
     )
     parser.add_argument(
-        "--idin",
+        "--inid",
         "-i",
         type=str,
         required=True,
         help="Google Drive folder ID to download from",
     )
     parser.add_argument(
-        "--idout",
-        "-i",
+        "--outid",
+        "-o",
         type=str,
         required=True,
         help="Google Drive folder ID to upload to",
