@@ -2,21 +2,18 @@ import argparse
 import base64
 import io
 import json
-import mimetypes
-import os
 import sys
-from pathlib import Path
 
 from google.oauth2 import service_account
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
-from googleapiclient.http import MediaFileUpload, MediaIoBaseDownload, MediaIoBaseUpload
+from googleapiclient.http import MediaIoBaseDownload, MediaIoBaseUpload
 
 
 def main():
-    """Creates a new folder based on the Naluscope version, and
-    uploads a given file or directory contents to the created folder
+    """Downloads documents from the given drive folder as PDF, then
+    uploads them to the given folder
     """
     args = parse_args(sys.argv[1:])
     folder_in_id = args.idin
