@@ -54,22 +54,24 @@ def get_file_ids(parent_id: str, drive_id: str, creds: Credentials) -> dict:
     Returns:
         (dict) Mapping of file name (str) to file id (str)
     """
-
-    service = build("drive", "v3", credentials=creds)
-    filequery = f"parents in '{parent_id}' and not mimeType='application/vnd.google-apps.folder' and trashed=false"
-    files = (
-        service.files()
-        .list(
-            q=filequery,
-            pageSize=1000,
-            corpora="drive",
-            driveId=drive_id,
-            spaces="drive",
-            fields="nextPageToken, files(id, name)",
-            supportsAllDrives=True,
-            includeItemsFromAllDrives=True,
-        ).execute()
-    )
+    try:
+        service = build("drive", "v3", credentials=creds)
+        filequery = f"parents in '{parent_id}' and not mimeType='application/vnd.google-apps.folder' and trashed=false"
+        files = (
+            service.files()
+            .list(
+                q=filequery,
+                pageSize=1000,
+                corpora="drive",
+                driveId=drive_id,
+                spaces="drive",
+                fields="nextPageToken, files(id, name)",
+                supportsAllDrives=True,
+                includeItemsFromAllDrives=True,
+            ).execute()
+        )
+    except HttpError:
+        raise
     file_ids = {drive_file["name"]: drive_file["id"] for drive_file in files["files"]}
     return file_ids
 
@@ -109,25 +111,28 @@ def upload_pdf_from_memory(
     Returns:
         (str) File id of the uploaded/updated file
     """
-    service = build("drive", "v3", credentials=credentials)
     file_contents = io.BytesIO(file_contents)
-    media_body = MediaIoBaseUpload(
-        file_contents,
-        mimetype="application/pdf",
-        chunksize=1024 * 1024,
-        resumable=True,
-    )
     body = {"title": file_name, "name": file_name, "parents": [parent_id]}
-    file = (
-        service.files()
-        .create(
-            body=body,
-            media_body=media_body,
-            supportsAllDrives=True,
-            fields="id",
+    try:
+        service = build("drive", "v3", credentials=credentials)
+        media_body = MediaIoBaseUpload(
+            file_contents,
+            mimetype="application/pdf",
+            chunksize=1024 * 1024,
+            resumable=True,
         )
-        .execute()
-    )
+        file = (
+            service.files()
+            .create(
+                body=body,
+                media_body=media_body,
+                supportsAllDrives=True,
+                fields="id",
+            )
+            .execute()
+        )
+    except HttpError:
+        raise
     return file.get("id")
 
 
@@ -141,20 +146,23 @@ def update_pdf_from_memory(
         parent_id (str): Id of parent folder to upload file to
         credentials (Credentials): Service account credentials
     """
-    service = build("drive", "v3", credentials=credentials)
-    file_contents = io.BytesIO(file_contents)
-    media_body = MediaIoBaseUpload(
-        file_contents,
-        mimetype="application/pdf",
-        chunksize=1024 * 1024,
-        resumable=True,
-    )
-    service.files().update(
-        fileId=file_id,
-        media_body=media_body,
-        supportsAllDrives=True,
-        keepRevisionForever=True,
-    ).execute()
+    try:
+        service = build("drive", "v3", credentials=credentials)
+        file_contents = io.BytesIO(file_contents)
+        media_body = MediaIoBaseUpload(
+            file_contents,
+            mimetype="application/pdf",
+            chunksize=1024 * 1024,
+            resumable=True,
+        )
+        service.files().update(
+            fileId=file_id,
+            media_body=media_body,
+            supportsAllDrives=True,
+            keepRevisionForever=True,
+        ).execute()
+    except HttpError:
+        raise
 
 
 def export_pdf(file_id: str, credentials: Credentials) -> bytes:
@@ -175,9 +183,7 @@ def export_pdf(file_id: str, credentials: Credentials) -> bytes:
         done = False
         while done is False:
             _, done = downloader.next_chunk()
-    except HttpError as error:
-        print(f"An error occurred: {error}")
-        file = None
+    except HttpError:
         raise
 
     return file.getvalue()
