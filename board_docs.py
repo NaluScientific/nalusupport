@@ -26,8 +26,8 @@ def main():
         print("Downloading as PDF:", file_name)
         contents = export_pdf(file_id, credentials)
 
-        print("Uploading...")
         file_name += ".pdf"
+        print(f"Uploading {file_name}...")
         upload_or_update_pdf_from_memory(contents, file_name, folder_out_id, drive_id, credentials)
 
 
