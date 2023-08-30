@@ -18,16 +18,17 @@ def main():
     args = parse_args(sys.argv[1:])
     folder_in_id = args.inid
     folder_out_id = args.outid
+    drive_id = args.driveid
     credentials = load_credentials(args.credentials)
 
-    file_ids = get_file_ids(folder_in_id, credentials)
+    file_ids = get_file_ids(folder_in_id, drive_id, credentials)
     for file_name, file_id in file_ids.items():
         print("Downloading as PDF:", file_name)
         contents = export_pdf(file_id, credentials)
 
         print("Uploading...")
         file_name += ".pdf"
-        upload_or_update_pdf_from_memory(contents, file_name, folder_out_id, credentials)
+        upload_or_update_pdf_from_memory(contents, file_name, folder_out_id, drive_id, credentials)
 
 
 def load_credentials(encoded_creds: str) -> Credentials:
@@ -42,7 +43,7 @@ def load_credentials(encoded_creds: str) -> Credentials:
     return creds
 
 
-def get_file_ids(parent_id: str, creds: Credentials) -> dict:
+def get_file_ids(parent_id: str, drive_id: str, creds: Credentials) -> dict:
     """Get all file ids in a given folder in Google Drive. Will not
     include folders. Duplicate file names will make me sad
 
@@ -55,24 +56,26 @@ def get_file_ids(parent_id: str, creds: Credentials) -> dict:
     """
 
     service = build("drive", "v3", credentials=creds)
-    filequery = f"parents in '{parent_id}' and not mimeType='application/vnd.google-apps.folder'"
+    filequery = f"parents in '{parent_id}' and not mimeType='application/vnd.google-apps.folder' and trashed=false"
     files = (
         service.files()
         .list(
             q=filequery,
+            pageSize=1000,
+            corpora="drive",
+            driveId=drive_id,
             spaces="drive",
-            fields="files(id, name)",
+            fields="nextPageToken, files(id, name)",
             supportsAllDrives=True,
             includeItemsFromAllDrives=True,
-        )
-        .execute()
+        ).execute()
     )
     file_ids = {drive_file["name"]: drive_file["id"] for drive_file in files["files"]}
     return file_ids
 
 
 def upload_or_update_pdf_from_memory(
-    contents: bytes, name: str, parent_id: str, creds: Credentials
+    contents: bytes, name: str, parent_id: str, drive_id: str, creds: Credentials
 ) -> str:
     """Uploads a file to parent_id, Updates the contents if file name exists at parent_id
 
@@ -85,7 +88,7 @@ def upload_or_update_pdf_from_memory(
     Returns:
         (str) File id of the uploaded/updated file
     """
-    drive_file_ids = get_file_ids(parent_id, creds)
+    drive_file_ids = get_file_ids(parent_id, drive_id, creds)
     if name in drive_file_ids.keys():
         file_id = update_pdf_from_memory(contents, drive_file_ids[name], creds)
     else:
@@ -171,8 +174,7 @@ def export_pdf(file_id: str, credentials: Credentials) -> bytes:
         downloader = MediaIoBaseDownload(file, request)
         done = False
         while done is False:
-            status, done = downloader.next_chunk()
-            print(f"Download {int(status.progress() * 100)}.")
+            _, done = downloader.next_chunk()
     except HttpError as error:
         print(f"An error occurred: {error}")
         file = None
@@ -192,6 +194,12 @@ def parse_args(argv):
         type=str,
         required=True,
         help="Google Service Account Credentials",
+    )
+    parser.add_argument(
+        "--driveid",
+        type=str,
+        required=True,
+        help="Google drive top-level folder ID",
     )
     parser.add_argument(
         "--inid",
