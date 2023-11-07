@@ -1,11 +1,16 @@
 naluscope:
   current:
+    - name: 0.15.0
+      date: "2023-11-06"
+      downloads:
+        windows: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.15.0/NaluScope.Installer-0.15.0.0.exe
+        linux: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.15.0/naluscope.tar.gz
+  archived:
     - name: 0.14.2
       date: "2023-08-08"
       downloads:
         windows: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.14.2/NaluScope.Installer-0.14.2.0.exe
         linux: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.14.2/naluscope.tar.gz
-  archived:
     - name: 0.14.1
       date: "2023-07-26"
       downloads:
@@ -26,9 +31,6 @@ naluscope:
       downloads:
         windows: https://drive.google.com/file/d/1h_IJPpJrCU35hO2zVl1XrOt56njvMDcB/view?usp=share_link
         linux: https://drive.google.com/file/d/1yIl3pCg1Pen6fk2UnZVAoeSaHrok1Vr-/view?usp=share_link
-    # - name: 0.12.1
-    #   downloads:
-    #     windows: https://drive.google.com/file/d/1bGbRmYYwOJXRazDwr5wm7jmqyFS3rYQe/view?usp=share_link
     - name: 0.12.0
       date: "2023-05-19"
       downloads:
@@ -39,12 +41,6 @@ naluscope:
       downloads:
         windows: https://drive.google.com/file/d/1-n_BQYrGZvjP4cyXHEeNWXKfsJzepwkJ/view?usp=share_link
         linux: https://drive.google.com/file/d/1s2mN5sNXHajR9Lthn0iCiXfOi7NreX0i/view?usp=share_link
-    # - name: 0.9.0
-    #   downloads:
-    #     windows: https://drive.google.com/file/d/1nPV9OGSwpM-qDMNtXcPpVct_tlkxIYZo/view?usp=share_link
-    # - name: 0.7.4
-    #   downloads:
-    #     windows: https://drive.google.com/file/d/1o1nixwrMPE3JmzY1XsTEyly8onPT-k_4/view?usp=share_link
 
 backend:
   current:
@@ -59,9 +55,6 @@ backend:
       downloads:
         windows: https://drive.google.com/file/d/1ND-qOF8QnVo2Zi0FPLc7hFaNGH2UZh78/view?usp=share_link
         linux: https://drive.google.com/file/d/1fBh4fg0uEF5XfJSwoc8w7nBwwCj1bMTn/view?usp=share_link
-    # - name: 0.16.0
-    #   downloads:
-    #     windows: https://drive.google.com/file/d/1rony4-96lThJZcHtTtFeOpojxAzfDR6z/view?usp=share_link
 
 naluexporter:
   current:
