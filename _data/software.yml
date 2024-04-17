@@ -59,12 +59,16 @@ naluscope:
 
 backend:
   current:
+    - name: 0.2.6
+      date: "2024-04-16"
+      downloads:
+        windows: https://drive.google.com/file/d/1zGyoCu55POek7Qb9x0KrlHvIqyF2SaG8/view?usp=sharing
+  archived:
     - name: 0.1.10
       date: "2023-07-26"
       downloads:
         windows: https://drive.google.com/file/d/1uSpRJKmLa6uGVj3e-F2LJnfP39brlOHj/view?usp=drive_link
         linux: https://drive.google.com/file/d/1RZWIAzaoLXHuRsVeS_pAS5SIYhbycjol/view?usp=drive_link
-  archived:
     - name: 0.1.8
       date: "2023-04-28"
       downloads:
@@ -73,15 +77,19 @@ backend:
 
 naluexporter:
   current:
+    - name: 0.4.3
+      date: "2024-04-16"
+      downloads:
+        windows: https://drive.google.com/file/d/1QllLyRxue98oh1d5_6czgJ3kQwS5xmQC/view?usp=sharing
+    - name: User Guide
+      date: "2024-04-16"
+      downloads:
+        windows: https://drive.google.com/file/d/1SmmmF9_nqrBTdODF6RHFqxqYGdDhF3jf/view?usp=drive_link
+  archived:
     - name: 0.3.0
       date: "2023-08-15"
       downloads:
         windows: https://drive.google.com/file/d/1tE4FhUroKDlYW-9pETD4cXfmGJ2w704S/view?usp=drive_link
-    - name: User Guide
-      date: "2023-07-30"
-      downloads:
-        windows: https://drive.google.com/file/d/1SmmmF9_nqrBTdODF6RHFqxqYGdDhF3jf/view?usp=drive_link
-  archived:
     - name: 0.2.0
       date: "2023-07-30"
       downloads:
