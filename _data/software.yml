@@ -1,11 +1,16 @@
 naluscope:
   current:
+    - name: 0.18.0
+      date: "2024-06-02"
+      downloads:
+        windows: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.18.0/NaluScope.Installer-0.18.0.0.exe
+        linux: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.18.0/naluscope.tar.gz
+  archived:
     - name: 0.17.4
       date: "2024-04-22"
       downloads:
         windows: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.17.4/NaluScope.Installer-0.17.4.0.exe
         linux: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.17.4/naluscope.tar.gz
-  archived:
     - name: 0.16.0
       date: "2024-03-24"
       downloads:
