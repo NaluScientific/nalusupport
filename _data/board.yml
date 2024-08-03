@@ -216,16 +216,18 @@ hiper:
     - name: NaluScope v0.18.0 Manual
       url: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.18.0/NaluScope.0.18.0.-.HiPER.User.Manual.pdf
 
-DSA-C10-8:
+dsa-c10-8:
   current:
     - name: NaluScope v0.19.0 Manual
       url: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.19.0/NaluScope.0.19.0.-.DSA-C10-8.User.Manual.pdf
-    - name: Firmware (.mcs)
+    - name: Firmware v181 (.mcs)
       url: https://drive.google.com/file/d/1gn3FM4CR5UxTPc9bGOZprlqkdHE0QLXT/view?usp=drive_link
     - name: User Guide (PDF)
       url:
     - name: Quick Start Guide (PDF)
       url: https://drive.google.com/file/d/1yMH5KeJH3lbQu1NpH32ctYxO6DGa5H10/view?usp=drive_link
+
+trbhmv1:
   archived:
     - name: NaluScope v0.18.0 Manual
       url: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.18.0/NaluScope.0.18.0.-.TRBHM.User.Manual.pdf
