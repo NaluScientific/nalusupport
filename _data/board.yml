@@ -271,15 +271,19 @@ upac96:
   current:
     - name: NaluScope v0.19.1 Manual
       url: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.19.1/NaluScope.0.19.1.-.UPAC96.User.Manual.pdf
-    - name: Firmware v927 (Memory configuration file)
-      url: https://drive.google.com/file/d/10XTFj6cScXn5RWY1_RE99q8WEmZRYhKz/view?usp=drive_link
-    - name: Firmware v927 (bit file)
-      url: https://drive.google.com/file/d/1LDRaPUBg-xM71fU24bhgDV2esw7Y4Ahy/view?usp=drive_link
+    - name: Firmware v928 (Memory configuration file)
+      url: https://drive.google.com/file/d/12BXGJHqx_EL7Jpb3zDiXetsfXbPhegAS/view?usp=drive_link
+    - name: Firmware v928 (bit file)
+      url: https://drive.google.com/file/d/1P3zcV4EJwhs6fJ-0jzcGlW5Q9QCJngLC/view?usp=drive_link
     - name: User Guide (PDF)
       url:
     - name: Quick Start Guide (PDF)
       url:
   archived:
+    - name: Firmware v927 (Memory configuration file)
+      url: https://drive.google.com/file/d/10XTFj6cScXn5RWY1_RE99q8WEmZRYhKz/view?usp=drive_link
+    - name: Firmware v927 (bit file)
+      url: https://drive.google.com/file/d/1LDRaPUBg-xM71fU24bhgDV2esw7Y4Ahy/view?usp=drive_link
     - name: NaluScope v0.19.0 Manual
       url: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.19.0/NaluScope.0.19.0.-.UPAC96.User.Manual.pdf
     - name: NaluScope v0.18.0 Manual
