@@ -1,9 +1,5 @@
 backend:
   archived:
-  - date: '2024-04-16'
-    downloads:
-      windows: https://drive.google.com/file/d/1zGyoCu55POek7Qb9x0KrlHvIqyF2SaG8/view?usp=sharing
-    name: 0.2.6
   - date: '2023-07-26'
     downloads:
       linux: https://drive.google.com/file/d/1RZWIAzaoLXHuRsVeS_pAS5SIYhbycjol/view?usp=drive_link
@@ -15,17 +11,13 @@ backend:
       windows: https://drive.google.com/file/d/1ND-qOF8QnVo2Zi0FPLc7hFaNGH2UZh78/view?usp=share_link
     name: 0.1.8
   current:
-  - date: '2024-09-10'
-    downloads:
-      linux: https://github.com/NaluScientific/backend-Release/releases/download/vv0.19.2/backend.tar.gz
-      windows: https://github.com/NaluScientific/backend-Release/releases/download/vv0.19.2/backend.Installer-v0.19.2.0.exe
-    name: v0.19.2
-naluexporter:
-  archived:
   - date: '2024-04-16'
     downloads:
-      windows: https://drive.google.com/file/d/1QllLyRxue98oh1d5_6czgJ3kQwS5xmQC/view?usp=sharing
-    name: 0.4.3
+      windows: https://drive.google.com/file/d/1zGyoCu55POek7Qb9x0KrlHvIqyF2SaG8/view?usp=sharing
+    name: 0.2.6
+naluexporter:
+  archived:
+
   - date: '2023-08-15'
     downloads:
       windows: https://drive.google.com/file/d/1tE4FhUroKDlYW-9pETD4cXfmGJ2w704S/view?usp=drive_link
@@ -39,11 +31,10 @@ naluexporter:
       windows: https://drive.google.com/file/d/1sie2-3XMZp0t7IwACXZO4Q_PaS12GR0s/view?usp=drive_link
     name: 0.1.0
   current:
-  - date: '2024-09-10'
+  - date: '2024-04-16'
     downloads:
-      linux: https://github.com/NaluScientific/naluexporter-Release/releases/download/vv0.19.2/naluexporter.tar.gz
-      windows: https://github.com/NaluScientific/naluexporter-Release/releases/download/vv0.19.2/naluexporter.Installer-v0.19.2.0.exe
-    name: v0.19.2
+      windows: https://drive.google.com/file/d/1QllLyRxue98oh1d5_6czgJ3kQwS5xmQC/view?usp=sharing
+    name: 0.4.3
   - date: '2024-04-16'
     downloads:
       windows: https://drive.google.com/file/d/1SmmmF9_nqrBTdODF6RHFqxqYGdDhF3jf/view?usp=drive_link
@@ -123,6 +114,6 @@ naluscope:
   current:
   - date: '2024-09-10'
     downloads:
-      linux: https://github.com/NaluScientific/naluscope-Release/releases/download/vv0.19.2/naluscope.tar.gz
-      windows: https://github.com/NaluScientific/naluscope-Release/releases/download/vv0.19.2/naluscope.Installer-v0.19.2.0.exe
+      linux: https://github.com/NaluScientific/naluscope-Release/releases/download/v0.19.2/naluscope.tar.gz
+      windows: https://github.com/NaluScientific/naluscope-Release/releases/download/v0.19.2/naluscope.Installer-0.19.2.0.exe
     name: v0.19.2
