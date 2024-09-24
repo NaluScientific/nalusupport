@@ -17,6 +17,10 @@ backend:
     name: 0.2.6
 naluexporter:
   archived:
+  - date: '2024-04-16'
+    downloads:
+      windows: https://drive.google.com/file/d/1QllLyRxue98oh1d5_6czgJ3kQwS5xmQC/view?usp=sharing
+    name: 0.4.3
   - date: '2023-08-15'
     downloads:
       windows: https://drive.google.com/file/d/1tE4FhUroKDlYW-9pETD4cXfmGJ2w704S/view?usp=drive_link
@@ -30,13 +34,13 @@ naluexporter:
       windows: https://drive.google.com/file/d/1sie2-3XMZp0t7IwACXZO4Q_PaS12GR0s/view?usp=drive_link
     name: 0.1.0
   current:
-  - date: '2024-04-16'
+  - date: '2024-08-23'
     downloads:
       windows: https://drive.google.com/file/d/1QllLyRxue98oh1d5_6czgJ3kQwS5xmQC/view?usp=sharing
-    name: 0.4.3
+    name: 0.4.5
   - date: '2024-04-16'
     downloads:
-      windows: https://drive.google.com/file/d/1SmmmF9_nqrBTdODF6RHFqxqYGdDhF3jf/view?usp=drive_link
+      windows: https://drive.google.com/file/d/1sXJxujG7F2zuAgtFF3mXLAkFa9G5s_dY/view?usp=drive_link
     name: User Guide
 naluscope:
   archived:
