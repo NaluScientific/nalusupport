@@ -36,11 +36,11 @@ naluexporter:
   current:
   - date: '2024-08-23'
     downloads:
-      windows: https://drive.google.com/file/d/1QllLyRxue98oh1d5_6czgJ3kQwS5xmQC/view?usp=sharing
+      windows: https://drive.google.com/file/d/1sXJxujG7F2zuAgtFF3mXLAkFa9G5s_dY/view?usp=drive_link
     name: 0.4.5
   - date: '2024-04-16'
     downloads:
-      windows: https://drive.google.com/file/d/1sXJxujG7F2zuAgtFF3mXLAkFa9G5s_dY/view?usp=drive_link
+      windows: https://drive.google.com/file/d/1SmmmF9_nqrBTdODF6RHFqxqYGdDhF3jf/view?usp=drive_link
     name: User Guide
 naluscope:
   archived:
