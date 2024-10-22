@@ -47,6 +47,21 @@ Any driver issues can usually be solved by downloading these drivers:
 
 ----
 
+### Crashes after update
+
+If NaluScope crashes after update, either directly after start or when pressing the "Continue" button in the startup dialog, there is a reset switch in the program.  
+
+NaluScope has a memory for UI settings which are loaded on startup. When updating the software there is a small chance of the settings either not being compatible or being corrupted.
+
+To fix this issue:
+1. Open a terminal in the folder NaluScope is installed.
+2. in the terminal, run:
+    ```sh
+    nalu -r
+    ```
+4. `-r` is a reset switch which will reset all memories.
+
+
 ### Board Not Detected
 
 If the board does not appear in the list of available ports in the startup dialog, here are some things to try:
