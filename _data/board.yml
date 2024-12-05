@@ -340,6 +340,10 @@ trbhmv1:
     url: https://drive.google.com/file/d/1ugPvGRmQOs2Q8nha6V88ctYdUiRignfe/view?usp=drive_link
 upac96:
   archived:
+  - name: Firmware v928 (Memory configuration file)
+    url: https://drive.google.com/file/d/12BXGJHqx_EL7Jpb3zDiXetsfXbPhegAS/view?usp=drive_link
+  - name: Firmware v928 (bit file)
+    url: https://drive.google.com/file/d/1P3zcV4EJwhs6fJ-0jzcGlW5Q9QCJngLC/view?usp=drive_link
   - name: NaluScope v0.20.1 Manual
     url: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.20.1/NaluScope.0.20.1.-.UPAC96.User.Manual.pdf
   - name: NaluScope v0.20.0 Manual
@@ -383,10 +387,10 @@ upac96:
   current:
   - name: NaluScope v0.20.2 Manual
     url: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.20.2/NaluScope.0.20.2.-.UPAC96.User.Manual.pdf
-  - name: Firmware v928 (Memory configuration file)
-    url: https://drive.google.com/file/d/12BXGJHqx_EL7Jpb3zDiXetsfXbPhegAS/view?usp=drive_link
-  - name: Firmware v928 (bit file)
-    url: https://drive.google.com/file/d/1P3zcV4EJwhs6fJ-0jzcGlW5Q9QCJngLC/view?usp=drive_link
+  - name: Firmware v929 (Memory configuration file)
+    url: https://drive.google.com/file/d/1zEtoNj1a5pOM-vOug4pwJnbPRV9B6NDW/view?usp=drive_link
+  - name: Firmware v929 (bit file)
+    url: https://drive.google.com/file/d/1-SUbUUVnGaTWW3ec7DWbXJSEF4qsVRqZ/view?usp=drive_link
   - name: User Guide (PDF)
     url: null
   - name: Quick Start Guide (PDF)
