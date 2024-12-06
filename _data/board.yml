@@ -246,6 +246,14 @@ dsa-c10-8:
     url: null
   - name: Quick Start Guide (PDF)
     url: https://drive.google.com/file/d/1yMH5KeJH3lbQu1NpH32ctYxO6DGa5H10/view?usp=drive_link
+hdsocv2_evalr2:
+  current:
+  - name: NaluScope v0.20.2 Manual
+    url: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.20.2/NaluScope.0.20.2.-.HDSOCv1.EVB.Rev.2.User.Manual.pdf
+  - name: Firmware v972 (.mcs)
+    url: https://drive.google.com/file/d/1xIoTLK9V__iy-z7WxoJKWiXOkMnw2eTL/view?usp=drive_link
+  - name: Firmware v972 (.bit)
+    url: https://drive.google.com/file/d/1Qt12unt6kHLF34qwaXL1KZhh4gEIsh73/view?usp=drive_link
 hdsocv1_evalr2:
   archived:
   - name: NaluScope v0.20.1 Manual
@@ -316,28 +324,6 @@ hiper:
     url: null
   - name: Quick Start Guide (PDF)
     url: https://drive.google.com/file/d/1gjZpg0isZsnjeHMDB83P1xoy_iiousSz/view?usp=sharing
-trbhmv1:
-  archived:
-  - name: NaluScope v0.18.0 Manual
-    url: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.18.0/NaluScope.0.18.0.-.TRBHM.User.Manual.pdf
-  - name: NaluScope v0.17.4 Manual
-    url: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.17.4/NaluScope.0.17.4.-.TRBHM.User.Manual.pdf
-  - name: NaluScope v0.16.0 Manual
-    url: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.16.0/NaluScope.0.16.0.-.TRBHM.User.Manual.pdf
-  - name: NaluScope v0.15.1 Manual
-    url: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.15.1/NaluScope.0.15.1.-.TRBHM.User.Manual.pdf
-  - name: NaluScope v0.15.0 Manual
-    url: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.15.0/NaluScope.0.15.0.-.TRBHM.User.Manual.pdf
-  - name: NaluScope v0.14.2 Manual
-    url: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.14.2/NaluScope.0.14.2.-.TRBHM.User.Manual.pdf
-  - name: NaluScope v0.14.1 Manual
-    url: https://drive.google.com/file/d/1d9u_LaSATaLVt-7FQEYbcZXIUCDobGqx/view?usp=drive_link
-  - name: NaluScope v0.14.0 Manual
-    url: https://drive.google.com/file/d/1VEAIOqGN7tcFkQ0VwAxgESN8kHp2N_vZ/view?usp=drive_link
-  - name: NaluScope v0.13.0 Manual
-    url: https://drive.google.com/file/d/1ioSNq1y9z8PO9HMWCUHkiAyoB898ZCE0/view?usp=drive_link
-  - name: NaluScope v0.12.2 Manual
-    url: https://drive.google.com/file/d/1ugPvGRmQOs2Q8nha6V88ctYdUiRignfe/view?usp=drive_link
 upac96:
   archived:
   - name: Firmware v928 (Memory configuration file)
