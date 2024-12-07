@@ -225,6 +225,8 @@ asocv3:
     url: null
 dsa-c10-8:
   archived:
+  - name: Firmware v181 (.mcs)
+    url: https://drive.google.com/file/d/1gn3FM4CR5UxTPc9bGOZprlqkdHE0QLXT/view?usp=drive_link
   - name: NaluScope v0.20.1 Manual
     url: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.20.1/NaluScope.0.20.1.-.DSA-C10-8.User.Manual.pdf
   - name: NaluScope v0.20.0 Manual
@@ -240,8 +242,8 @@ dsa-c10-8:
   current:
   - name: NaluScope v0.20.2 Manual
     url: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.20.2/NaluScope.0.20.2.-.DSA-C10-8.User.Manual.pdf
-  - name: Firmware v181 (.mcs)
-    url: https://drive.google.com/file/d/1gn3FM4CR5UxTPc9bGOZprlqkdHE0QLXT/view?usp=drive_link
+  - name: Firmware v183 (.mcs)
+    url: https://drive.google.com/file/d/1GEGrtVEQS6f7k-XeqvqjCHQ3K2CYe6Ur/view?usp=drive_link
   - name: User Guide (PDF)
     url: null
   - name: Quick Start Guide (PDF)
