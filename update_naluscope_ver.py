@@ -45,7 +45,10 @@ def update_naluscope_manual_version(new_version):
                 board_name_for_url = current_manual['url'].split('.-.')[1].split('.User.Manual.pdf')[0]
 
                 # Move the current NaluScope manual to the archived section
-                config[board]['archived'].insert(0, current_manual)
+                try:
+                    config[board]['archived'].insert(0, current_manual)
+                except KeyError:
+                    config[board]['archived'] = [current_manual]
                 config[board]['current'].remove(current_manual)
 
             # Add a new entry for the updated NaluScope manual

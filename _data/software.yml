@@ -44,6 +44,11 @@ naluexporter:
     name: User Guide
 naluscope:
   archived:
+  - date: '2024-11-07'
+    downloads:
+      linux: https://github.com/NaluScientific/naluscope-Release/releases/download/v0.20.2/naluscope.tar.gz
+      windows: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.20.2/NaluScope.Installer-0.20.2.0.exe
+    name: v0.20.2
   - date: '2024-10-23'
     downloads:
       linux: https://github.com/NaluScientific/naluscope-Release/releases/download/v0.20.1/naluscope.tar.gz
@@ -135,8 +140,8 @@ naluscope:
       windows: https://drive.google.com/file/d/1-n_BQYrGZvjP4cyXHEeNWXKfsJzepwkJ/view?usp=share_link
     name: 0.11.0
   current:
-  - date: '2024-11-07'
+  - date: '2024-12-18'
     downloads:
-      linux: https://github.com/NaluScientific/naluscope-Release/releases/download/v0.20.2/naluscope.tar.gz
-      windows: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.20.2/NaluScope.Installer-0.20.2.0.exe
-    name: v0.20.2
+      linux: https://github.com/NaluScientific/naluscope-Release/releases/download/v0.21.0/naluscope.tar.gz
+      windows: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.21.0/NaluScope.Installer-0.21.0.0.exe
+    name: v0.21.0
