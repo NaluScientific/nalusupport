@@ -17,6 +17,10 @@ backend:
     name: 0.2.6
 naluexporter:
   archived:
+  - date: '2024-08-23'
+    downloads:
+      windows: https://drive.google.com/file/d/1sXJxujG7F2zuAgtFF3mXLAkFa9G5s_dY/view?usp=drive_link
+    name: 0.4.4
   - date: '2024-04-16'
     downloads:
       windows: https://drive.google.com/file/d/1QllLyRxue98oh1d5_6czgJ3kQwS5xmQC/view?usp=sharing
@@ -34,9 +38,9 @@ naluexporter:
       windows: https://drive.google.com/file/d/1sie2-3XMZp0t7IwACXZO4Q_PaS12GR0s/view?usp=drive_link
     name: 0.1.0
   current:
-  - date: '2024-08-23'
+  - date: '2025-02-02'
     downloads:
-      windows: https://drive.google.com/file/d/1sXJxujG7F2zuAgtFF3mXLAkFa9G5s_dY/view?usp=drive_link
+      windows: https://drive.google.com/file/d/17knKB3HExRenOA2RhICNpUs-usvC0Ci2/view?usp=drive_link
     name: 0.4.5
   - date: '2024-04-16'
     downloads:
