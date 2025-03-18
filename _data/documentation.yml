@@ -1,9 +1,12 @@
 
 naludaq:
   current:
+    - name: NaluDAQ v0.31.9 Manual
+      url: https://drive.google.com/file/d/1fbpWsnEYZL3Ns2H4yc7u-eD8XC9wMvre/view?usp=drive_link
+
+  archived:
     - name: NaluDAQ v0.27.1 Manual
       url: https://drive.google.com/file/d/1kzI-dpp29B3MCRUntrmt4RXihVeCgv50/view?usp=drive_link
-  archived:
     - name: NaluDAQ v0.19.0 Manual
       url: https://drive.google.com/file/d/1EzKxxklCOu9Gpm4EgtQYGiGYcLRTOwUw/view?usp=share_link
     - name: NaluDAQ v0.18.0  Manual
