@@ -25,3 +25,10 @@ bundle exec jekyll serve
 ```
 
 The website will be available at `http://localhost:4000` by default. The `--port` option can be used to specify a different port.
+
+
+## Update documentation
+
+`update_qs_docs_ver.py` is used to update the Quickstart documentation, it will download the Quickstart guide, convert it to PDF and upload to the google drive.
+To be able to do this the script will ask for access.
+The script require you to have a file `credentials.json` in the same folder as the script. Credentials file can be obtained from [https://console.cloud.google.com/apis/credentials] and then rename the file to `credentails.json`.

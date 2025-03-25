@@ -50,7 +50,7 @@ aardvarcv3:
   - name: User Guide (PDF)
     url: null
   - name: Quick Start Guide (PDF)
-    url: null
+    url: https://drive.google.com/file/d/1CTfnm1Y1-rNfkUhFV0FUsGmsvF2gby0N/view?usp=drive_link
 aodsoc_aods:
   archived:
   - name: NaluScope v0.21.0 Manual
