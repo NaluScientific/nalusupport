@@ -12,6 +12,10 @@ DOCUMENTS = {
         "id": "1BqGZal_IOrkoO7TrRUAlaFkhiINsB95hPEwgifx6xJA",
         "name": "AARDVARCv3 Quick Start Guide",
     },
+    "asocv3": {
+        "id": "1vmIQJW7kLYbjM9UroSmDwvjUb4p3xHjRvwRLp2V06uA",
+        "name": "ASOCv3 Quick Start Guide",
+    },
 }
 
 def authenticate():
@@ -100,7 +104,6 @@ def main():
         pdf_stream = download_doc_as_pdf(drive_service, doc_file_id)
         file_id = upload_or_update_pdf(drive_service, pdf_stream, pdf_name, shared_drive_folder_id)
         file_link = f"https://drive.google.com/file/d/{file_id}/view?usp=drive_link"
-        print(f"{brd_yml[brd_name]['current']}")
         for brd_item in brd_yml[brd_name]["current"]:
             print(brd_item["name"])
             if brd_item["name"] == "Quick Start Guide (PDF)":
