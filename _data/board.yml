@@ -350,6 +350,10 @@ hdsocv2_evalr2:
     url: https://drive.google.com/file/d/1xIoTLK9V__iy-z7WxoJKWiXOkMnw2eTL/view?usp=drive_link
   - name: Firmware v972 (.bit)
     url: https://drive.google.com/file/d/1Qt12unt6kHLF34qwaXL1KZhh4gEIsh73/view?usp=drive_link
+  - name: Product Sheet (PDF)
+    url: null
+  - name: Quick Start Guide (PDF)
+    url: null
 hiper:
   archived:
   - name: NaluScope v0.21.2 Manual
