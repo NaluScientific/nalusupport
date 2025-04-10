@@ -16,6 +16,10 @@ DOCUMENTS = {
         "id": "1vmIQJW7kLYbjM9UroSmDwvjUb4p3xHjRvwRLp2V06uA",
         "name": "ASOCv3 Quick Start Guide",
     },
+    "dsa-c10-8": {
+        "id": "1T9sc00kEXeePDXsOCsLUUpNWW2smemPLE8GCJq2JFq8",
+        "name": "DSA-C10-8 Quick Start Guide",
+    },
 }
 
 def authenticate():
