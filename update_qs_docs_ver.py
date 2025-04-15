@@ -20,6 +20,10 @@ DOCUMENTS = {
         "id": "1T9sc00kEXeePDXsOCsLUUpNWW2smemPLE8GCJq2JFq8",
         "name": "DSA-C10-8 Quick Start Guide",
     },
+    "hdsocv2_evalr2": {
+        "id": "1L7TGPs3nOFr6QudJ0OP8-9_vvB_9UeZN6ExA69bH7pg",
+        "name": "HDSOCv2 Eval Rev2 Quick Start Guide",
+    },
 }
 
 def authenticate():
