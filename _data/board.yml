@@ -51,7 +51,7 @@ aardvarcv3:
     url: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.21.4/NaluScope.0.21.4.-.AARDVARCv3.User.Manual.pdf
   - name: Firmware v96 (192.168.1.68)
     url: https://drive.google.com/file/d/1ULXABcLwraOW1E2y6IwO6Mn-i-hHZRCP/view?usp=drive_link
-  - name: User Guide (PDF)
+  - name: Product Sheet (PDF)
     url: null
   - name: Quick Start Guide (PDF)
     url: https://drive.google.com/file/d/1CTfnm1Y1-rNfkUhFV0FUsGmsvF2gby0N/view?usp=drive_link
@@ -102,7 +102,7 @@ aodsoc_aods:
     url: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.21.4/NaluScope.0.21.4.-.AODSoC.AODS.User.Manual.pdf
   - name: Firmware v3
     url: https://drive.google.com/file/d/1bv2x8sY5ONaVQU13RRGzWnKFiqjYicKd/view?usp=share_link
-  - name: User Guide (PDF)
+  - name: Product Sheet (PDF)
     url: null
   - name: Quick Start Guide (PDF)
     url: null
@@ -153,7 +153,7 @@ aodsoc_asoc:
     url: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.21.4/NaluScope.0.21.4.-.AODSoC.ASoC.User.Manual.pdf
   - name: Firmware v2
     url: https://drive.google.com/file/d/1VC_jE59mspUSEQOrga0Z6lJBhgxL3q7V/view?usp=share_link
-  - name: User Guide (PDF)
+  - name: Product Sheet (PDF)
     url: null
   - name: Quick Start Guide (PDF)
     url: null
@@ -204,7 +204,7 @@ aodsv2_eval:
     url: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.21.4/NaluScope.0.21.4.-.AODSv2.User.Manual.pdf
   - name: Firmware v57
     url: https://drive.google.com/file/d/1f-kw6w8Q7O83kXTRBgGZmw3d-KL9ADkF/view?usp=share_link
-  - name: User Guide (PDF)
+  - name: Product Sheet (PDF)
     url: null
   - name: Quick Start Guide (PDF)
     url: null
@@ -259,8 +259,8 @@ asocv3:
     url: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.21.4/NaluScope.0.21.4.-.ASoCv3.User.Manual.pdf
   - name: Firmware v67
     url: https://drive.google.com/file/d/1O2p8uqYrdSXl4gS1kiv7gjW5lDt1wfhY/view?usp=drive_link
-  - name: User Guide (PDF)
-    url: null
+  - name: Product Sheet (PDF)
+    url: https://drive.google.com/file/d/1W91F8d4uqlAY9QshhJXI93a8DvjZasmm/view?usp=drive_link
   - name: Quick Start Guide (PDF)
     url: https://drive.google.com/file/d/16XoLRMjoQNdGVT4lBg8RcHpv_LFzr2Zx/view?usp=drive_link
 dsa-c10-8:
@@ -292,7 +292,7 @@ dsa-c10-8:
     url: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.21.4/NaluScope.0.21.4.-.DSA-C10-8.User.Manual.pdf
   - name: Firmware v183 (.mcs)
     url: https://drive.google.com/file/d/1GEGrtVEQS6f7k-XeqvqjCHQ3K2CYe6Ur/view?usp=drive_link
-  - name: User Guide (PDF)
+  - name: Product Sheet (PDF)
     url: null
   - name: Quick Start Guide (PDF)
     url: https://drive.google.com/file/d/12rMTGaeYaqWjG6FHqYSQS02AidxzhICz/view?usp=drive_link
@@ -401,7 +401,7 @@ hiper:
     url: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.21.4/NaluScope.0.21.4.-.HiPER.User.Manual.pdf
   - name: Firmware v105
     url: https://drive.google.com/file/d/1Zq_17IMPaCbFof8yesXuySVYPMaxySU-/view?usp=share_link
-  - name: User Guide (PDF)
+  - name: Product Sheet (PDF)
     url: null
   - name: Quick Start Guide (PDF)
     url: https://drive.google.com/file/d/1gjZpg0isZsnjeHMDB83P1xoy_iiousSz/view?usp=sharing
@@ -466,7 +466,7 @@ upac96:
     url: https://drive.google.com/file/d/1zEtoNj1a5pOM-vOug4pwJnbPRV9B6NDW/view?usp=drive_link
   - name: Firmware v929 (bit file)
     url: https://drive.google.com/file/d/1-SUbUUVnGaTWW3ec7DWbXJSEF4qsVRqZ/view?usp=drive_link
-  - name: User Guide (PDF)
+  - name: Product Sheet (PDF)
     url: null
   - name: Quick Start Guide (PDF)
     url: null
