@@ -371,7 +371,7 @@ hdsocv2_evalr2:
   - name: Product Sheet (PDF)
     url: null
   - name: Quick Start Guide (PDF)
-    url: null
+    url: https://drive.google.com/file/d/1CekQo9usuBXEUc51xjFUrIjBT58uTgmK/view?usp=drive_link
 hiper:
   archived:
   - name: NaluScope v0.21.3 Manual
