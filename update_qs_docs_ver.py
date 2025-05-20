@@ -17,7 +17,7 @@ DOCUMENTS = {
         "name": "ASOCv3 Quick Start Guide",
     },
     "dsa-c10-8": {
-        "id": "1T9sc00kEXeePDXsOCsLUUpNWW2smemPLE8GCJq2JFq8",
+        "id": "1lNx10sOix7dyMLdyyJDC4lHss2JILCN850cH5ig14bc",
         "name": "DSA-C10-8 Quick Start Guide",
     },
     "hdsocv2_evalr2": {
