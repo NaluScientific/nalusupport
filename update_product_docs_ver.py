@@ -12,6 +12,10 @@ DOCUMENTS = {
         "id": "17jg5gcy4MRN0rAS5YPjU7adMRuwmjSiLWimHnu-JJCQ",
         "name": "ASOCv3 Product Sheet",
     },
+    "dsa-c10-8": {
+        "id": "1OjFxIZoI6Wdx5ySPHrBdaBNsRtvWaXEq218ZwFj_Eeo",
+        "name": "DSA-C10-8 Product Sheet",
+    }
 }
 
 def authenticate():

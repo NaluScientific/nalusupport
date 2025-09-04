@@ -317,7 +317,7 @@ dsa-c10-8:
   - name: Firmware v183 (.mcs)
     url: https://drive.google.com/file/d/1GEGrtVEQS6f7k-XeqvqjCHQ3K2CYe6Ur/view?usp=drive_link
   - name: Product Sheet (PDF)
-    url: null
+    url: https://drive.google.com/file/d/1Xt4FJkWOvui_CpcxS8y1ALcjFzAjiSLz/view?usp=drive_link
   - name: Quick Start Guide (PDF)
     url: https://drive.google.com/file/d/12rMTGaeYaqWjG6FHqYSQS02AidxzhICz/view?usp=drive_link
 hdsocv1_evalr2:
