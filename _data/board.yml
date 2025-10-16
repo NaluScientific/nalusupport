@@ -56,7 +56,7 @@ aardvarcv3:
   - name: Firmware v96 (192.168.1.68)
     url: https://drive.google.com/file/d/1ULXABcLwraOW1E2y6IwO6Mn-i-hHZRCP/view?usp=drive_link
   - name: Product Sheet (PDF)
-    url: null
+    url: https://drive.google.com/file/d/1qUiUBrSj6QO9HrXIqEfLRujn1NLPdIFv/view?usp=drive_link
   - name: Quick Start Guide (PDF)
     url: https://drive.google.com/file/d/1CTfnm1Y1-rNfkUhFV0FUsGmsvF2gby0N/view?usp=drive_link
 aodsoc_aods:
@@ -376,7 +376,7 @@ hdsocv1_evalr2:
   - name: Firmware v957
     url: https://drive.google.com/file/d/1pxn8bNjZ_wZLZ4fb95StMIKt_siCFow4/view?usp=drive_link
   - name: Product Sheet (PDF)
-    url: https://drive.google.com/file/d/16_rlaKwwdUnvvBhd8-apZhJqzynXa8kY/view?usp=sharing
+    url: https://drive.google.com/file/d/1MidY1sj-NQJ_KNapfhLMtgirnz7FIK2b/view?usp=drive_link
   - name: Quick Start Guide (PDF)
     url: https://drive.google.com/file/d/1uCe7ojBhi-0A7A3_Fnsdh4HK-OLAfYVY/view?usp=sharing
 hdsocv2_evalr2:

@@ -8,9 +8,17 @@ import io
 BOARDS_FILE = './_data/board.yml'
 
 DOCUMENTS = {
+    "hdsocv1_evalr2": {
+        "id": "1A3kFtvJX9Xtjxkhcq930kR0071HDYwfFfinxKisOit0",
+        "name": "HDSoCv1 Rev 3 Product Sheet",
+    },
     "asocv3": {
-        "id": "17jg5gcy4MRN0rAS5YPjU7adMRuwmjSiLWimHnu-JJCQ",
-        "name": "ASOCv3 Product Sheet",
+        "id": "1PqlM9sbfxA4q02xcIAuEnGq2wkB3uWsxuLRdTBDSACs",
+        "name": "ASOCv3 Product Sheet"
+    },
+    "aardvarcv3": {
+        "id": "1ew0LrerSSdqWL69tvjoayyRbichlMYXMG-phIo_I37o",
+        "name": "DSA-C10-8 Product Sheet",
     },
     "dsa-c10-8": {
         "id": "1OjFxIZoI6Wdx5ySPHrBdaBNsRtvWaXEq218ZwFj_Eeo",

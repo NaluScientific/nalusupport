@@ -8,7 +8,9 @@ layout: default
 {% assign archive = site.data.board[page.model].archived %}
 
 {{ content }}
-
+{% if page.board_image %}
+    <img src="{{ page.board_image | absolute_url }}" fetchpriority="high" alt="An image of the {{page.title}}" style="display: block; max-height: 400px; max-width: 500px">
+{% endif %}
 <h2>Latest Version</h2>
 
 
