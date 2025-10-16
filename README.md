@@ -42,13 +42,13 @@ If the `BROWSER` environment variable is not configured in the WSL environment, 
 webbrowser.Error: could not locate runnable browser
 ```
 
-To avoid this error, the ```BROWSER``` environment variable can be set to a browser available on Windows. The following command can be used to set the default browser used by WSL for the duration of its shell session:
+To avoid this error, the ```BROWSER``` environment variable can be set to point to a browser executable available on Windows. The following command sets the browser path for the current WSL shell session only:
 
 ```sh
 export BROWSER="/mnt/c/Program Files/Google/Chrome/Application/chrome.exe"
 ```
 
-To set the default browser across shell sessions, the following commands can be used:
+To make WSL use the default Windows browser persistently across shell sessions, add the following line to your ~/.bashrc (or equivalent shell configuration) file:
 
 ```sh
 echo 'export BROWSER="/mnt/c/Windows/System32/cmd.exe /c start"' >> ~/.bashrc
