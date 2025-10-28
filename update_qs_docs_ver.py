@@ -24,6 +24,10 @@ DOCUMENTS = {
         "id": "1L7TGPs3nOFr6QudJ0OP8-9_vvB_9UeZN6ExA69bH7pg",
         "name": "HDSOCv2 Eval Rev2 Quick Start Guide",
     },
+    "hdsocv1_evalr2": {
+        "id": "14J4TGflgIARMwrq3gnrOdwsDA3Yf9PRbpP4T9eq8dOY",
+        "name": "HDSOCv1 Eval Rev3 Quick Start Guide",
+    }
 }
 
 def authenticate():
