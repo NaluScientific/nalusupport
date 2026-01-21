@@ -23,7 +23,8 @@ def update_naluscope_version(new_version):
             'date': datetime.now().strftime('%Y-%m-%d'),
             'downloads': {
                 'windows': f'https://github.com/NaluScientific/NaluScope-Release/releases/download/{new_version}/NaluScope.Installer-{new_version[1:]}.0.exe',
-                'linux': f'https://github.com/NaluScientific/{key}-Release/releases/download/{new_version}/{key}.tar.gz'
+                'linux': f'https://github.com/NaluScientific/{key}-Release/releases/download/{new_version}/{key}.tar.gz',
+                'appimage': f'https://github.com/NaluScientific/NaluScope-Release/releases/download/{new_version}/NaluScope-x86_64.AppImage',
             }
         }
         config[key]['current'][0] = new_entry

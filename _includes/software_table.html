@@ -5,6 +5,7 @@
             <th>Version</th>
             <th>Windows</th>
             <th>Linux</th>
+            <th>AppImage</th>
             <th>Release Date</th>
         </tr>
     </thead>
@@ -20,6 +21,13 @@
                 {% endif %}
             <td>
                 {% if item.downloads.linux %}
+                <a href="{{ item.downloads.linux }}" target="_blank">Download</a>
+                {% else %}
+                <em>Unavailable</em>
+                {% endif %}
+            </td>
+            <td>
+                {% if item.downloads.appimage %}
                 <a href="{{ item.downloads.linux }}" target="_blank">Download</a>
                 {% else %}
                 <em>Unavailable</em>
