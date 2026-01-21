@@ -184,6 +184,7 @@ naluscope:
   - date: '2026-01-21'
     downloads:
       appimage: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.22.4/NaluScope-x86_64.AppImage
+
       linux: https://github.com/NaluScientific/naluscope-Release/releases/download/v0.22.4/naluscope.tar.gz
       windows: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.22.4/NaluScope.Installer-0.22.4.0.exe
     name: v0.22.4
