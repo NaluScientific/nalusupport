@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   update:
@@ -58,11 +59,19 @@ jobs:
         if: steps.compare.outputs.needed == 'true'
         run: python update_naluscope_ver.py ${{ steps.latest.outputs.tag }}
 
-      - name: Commit and push
+      - name: Create pull request
         if: steps.compare.outputs.needed == 'true'
         run: |
+          BRANCH="naluscope-${{ steps.latest.outputs.tag }}"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
           git add _data/software.yml _data/board.yml
           git commit -m "ADD: NaluScope ${{ steps.latest.outputs.tag }}"
-          git push
+          git push -u origin "$BRANCH"
+          gh pr create \
+            --title "ADD: NaluScope ${{ steps.latest.outputs.tag }}" \
+            --body "Automated update of NaluScope to ${{ steps.latest.outputs.tag }}." \
+            --base main
+        env:
+          GH_TOKEN: ${{ github.token }}
