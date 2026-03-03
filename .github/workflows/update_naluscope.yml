@@ -59,8 +59,24 @@ jobs:
         if: steps.compare.outputs.needed == 'true'
         run: python update_naluscope_ver.py ${{ steps.latest.outputs.tag }}
 
-      - name: Create pull request
+      - name: Check for existing branch/PR
         if: steps.compare.outputs.needed == 'true'
+        id: existing
+        run: |
+          BRANCH="naluscope-${{ steps.latest.outputs.tag }}"
+          if gh pr list --head "$BRANCH" --json number --jq '.[0].number' | grep -q .; then
+            echo "PR already exists for $BRANCH, skipping"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            # Delete stale remote branch if it exists (e.g. from a previous failed run)
+            git push origin --delete "$BRANCH" 2>/dev/null || true
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Create pull request
+        if: steps.compare.outputs.needed == 'true' && steps.existing.outputs.skip == 'false'
         run: |
           BRANCH="naluscope-${{ steps.latest.outputs.tag }}"
           git config user.name "github-actions[bot]"
