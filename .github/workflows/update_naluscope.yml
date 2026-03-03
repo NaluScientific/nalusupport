@@ -1,0 +1,68 @@
+name: Update NaluScope Version
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    name: Check and Update NaluScope
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Get latest release tag
+        id: latest
+        run: |
+          TAG=$(gh release view --repo NaluScientific/NaluScope-Release --json tagName --jq '.tagName')
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Get current version
+        id: current
+        run: |
+          VERSION=$(python -c "
+          import yaml
+          with open('_data/software.yml') as f:
+              data = yaml.safe_load(f)
+          print(data['naluscope']['current'][0]['name'])
+          ")
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Compare versions
+        id: compare
+        run: |
+          if [ "${{ steps.latest.outputs.tag }}" = "${{ steps.current.outputs.version }}" ]; then
+            echo "No update needed (current: ${{ steps.current.outputs.version }})"
+            echo "needed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "Update available: ${{ steps.current.outputs.version }} -> ${{ steps.latest.outputs.tag }}"
+            echo "needed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Update NaluScope version
+        if: steps.compare.outputs.needed == 'true'
+        run: python update_naluscope_ver.py ${{ steps.latest.outputs.tag }}
+
+      - name: Commit and push
+        if: steps.compare.outputs.needed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _data/software.yml _data/board.yml
+          git commit -m "ADD: NaluScope ${{ steps.latest.outputs.tag }}"
+          git push
