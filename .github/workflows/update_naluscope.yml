@@ -69,9 +69,11 @@ jobs:
           git add _data/software.yml _data/board.yml
           git commit -m "ADD: NaluScope ${{ steps.latest.outputs.tag }}"
           git push -u origin "$BRANCH"
-          gh pr create \
+          PR_URL=$(gh pr create \
             --title "ADD: NaluScope ${{ steps.latest.outputs.tag }}" \
             --body "Automated update of NaluScope to ${{ steps.latest.outputs.tag }}." \
-            --base main
+            --base main)
+          gh pr review "$PR_URL" --approve
+          gh pr merge "$PR_URL" --squash --auto
         env:
           GH_TOKEN: ${{ github.token }}
