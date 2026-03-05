@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th style="width: 10em;">Revision</th>
+            <th>Author</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for guide in site.data.guides %}
+        <tr>
+            <td>
+                {% if guide.url %}
+                    <a href="{{ guide.url }}" target="_blank">{{ guide.name }}</a>
+                {% else %}
+                    {{ guide.name }} <em>(Unavailable)</em>
+                {% endif %}
+            </td>
+            <td>{{ guide.description }}</td>
+            <td>{{ guide.revision }} ({{ guide.revision_date }})</td>
+            <td>{{ guide.author }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

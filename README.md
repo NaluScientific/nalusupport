@@ -26,6 +26,17 @@ bundle exec jekyll serve
 
 The website will be available at `http://localhost:4000` by default. The `--port` option can be used to specify a different port.
 
+### Docker (no Ruby required)
+
+If you don't have Ruby installed, you can use Docker instead:
+
+```sh
+docker build -t nalusupport .
+docker run --rm -p 4000:4000 -v "$(pwd):/site" nalusupport
+```
+
+The site will be available at `http://localhost:4000`. Note that live reload does not work with Docker volume mounts on Windows — restart the container to pick up changes.
+
 
 ## Update documentation
 
