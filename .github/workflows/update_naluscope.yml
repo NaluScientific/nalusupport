@@ -76,6 +76,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
 
       - name: Create pull request
+        id: create_pr
         if: steps.compare.outputs.needed == 'true' && steps.existing.outputs.skip == 'false'
         run: |
           BRANCH="naluscope-${{ steps.latest.outputs.tag }}"
@@ -89,7 +90,14 @@ jobs:
             --title "ADD: NaluScope ${{ steps.latest.outputs.tag }}" \
             --body "Automated update of NaluScope to ${{ steps.latest.outputs.tag }}." \
             --base main)
-          gh pr review "$PR_URL" --approve
-          gh pr merge "$PR_URL" --squash --auto
+          echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"
         env:
           GH_TOKEN: ${{ github.token }}
+
+      - name: Approve and auto-merge pull request
+        if: steps.compare.outputs.needed == 'true' && steps.existing.outputs.skip == 'false'
+        run: |
+          gh pr review "${{ steps.create_pr.outputs.pr_url }}" --approve
+          gh pr merge "${{ steps.create_pr.outputs.pr_url }}" --squash --auto
+        env:
+          GH_TOKEN: ${{ secrets.PAT_GITHUB }}
