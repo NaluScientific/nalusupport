@@ -5,7 +5,7 @@
   revision: '1.0'
   revision_date: '2024-07-10'
   url: https://drive.google.com/file/d/165ho7JuJAggvxoOBMQpbzcXbk07B58xF/view?usp=drive_link
-- author: Marcus Luck
+- author: M. Luck
   description: "A step by step guide how to enable coincidence triggering on AARDVARCv3 in NaluScope."
   name: "AARDVARCv3 coincidence triggering guide"
   release_date: '2026-03-04'
@@ -19,3 +19,10 @@
   revision: '1.0'
   revision_date: '2026-03-05'
   url: https://drive.google.com/file/d/1bAXLt-RCspGmxYcvR2lv-eAioPCVJoAC/view?usp=drive_link
+- author: A. Yang
+  description: "How to configure the clock tree for supported Nalu products."
+  name: "User Guide: Configuring Clock Tree"
+  release_date: '2026-04-03'
+  revision: '1.0'
+  revision_date: '2026-04-03'
+  url: https://drive.google.com/file/d/11pOIweoOY7urxqO33GL0HI1AL8cFM9BF/view?usp=drive_link

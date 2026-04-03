@@ -15,7 +15,10 @@ DOCUMENTS = {
     },
     "User Guide: Pedestals": {
         "id": "1lTEQlSkwmalnIVL6GWs-3Jk3rZ0Quero5SYbtiRPwrs",
-    }
+    },
+    "User Guide: Configuring Clock Tree": {
+        "id": "16fekWireSzHPT-dyZnNIVZQm38OIF9Fe3kigvR8F2mg",
+    },
 }
 
 
