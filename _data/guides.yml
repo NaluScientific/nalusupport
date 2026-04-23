@@ -27,3 +27,10 @@
   revision: '1.0'
   revision_date: '2026-04-03'
   url: https://drive.google.com/file/d/1qOZ9LdQALMbcp0vL_9RCM7iM5VqG0Gk-/view?usp=drive_link
+- author: A. Yang
+  description: How to use window level control (WLC) to significantly reduce deadtime between triggers.
+  name: 'User Guide: Window Level Control'
+  release_date: '2026-04-22'
+  revision: '1.1'
+  revision_date: '2026-04-22'
+  url: https://drive.google.com/file/d/1Dw3oazDGsSWpnhihVwCZtqbvyMykIMB8/view?usp=drive_link

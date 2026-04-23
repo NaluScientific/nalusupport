@@ -10,7 +10,7 @@ DOCUMENTS = {
     "AARDVARCv3 Self (signal) Triggering Guide": {
         "id": "19420ZUgXIG-wMbP-rJwqWKmvU5l-7U5cQcowAWMGwKY",
     },
-    "AARDVARCv3 coincidence triggering guide": {
+    "AARDVARCv3 Coincidence Triggering Guide": {
         "id": "1LdHHY-PKuTMgUac_BanAz4GX8T6MfX4tKgNMw_Ra6Oc",
     },
     "User Guide: Pedestals": {
@@ -18,6 +18,9 @@ DOCUMENTS = {
     },
     "User Guide: Configuring Clock Tree": {
         "id": "16fekWireSzHPT-dyZnNIVZQm38OIF9Fe3kigvR8F2mg",
+    },
+    "User Guide: Window Level Control": {
+        "id": "19ioMyWSXFjcok7BHAeaCrf6fDrXrXZbo4QzNDElBfds",
     },
 }
 
