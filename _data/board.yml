@@ -420,11 +420,13 @@ hdsocv1_evalr2:
     url: https://drive.google.com/file/d/1GNScTHxwNvSg22PFzAELB3Rw2JiUlOBB/view?usp=share_link
   - name: Firmware v938
     url: https://drive.google.com/file/d/1XuZqh-2B6W-45gXsjthZWxVlDd_661E1/view?usp=share_link
+  - name: Firmware v957
+    url: https://drive.google.com/file/d/1pxn8bNjZ_wZLZ4fb95StMIKt_siCFow4/view?usp=drive_link
   current:
   - name: NaluScope v0.22.5 Manual
     url: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.22.5/NaluScope.0.22.5.-.HDSOCv1.EVB.Rev.2.User.Manual.pdf
-  - name: Firmware v957
-    url: https://drive.google.com/file/d/1pxn8bNjZ_wZLZ4fb95StMIKt_siCFow4/view?usp=drive_link
+  - name: Firmware v960 (.bit)
+    url: https://drive.google.com/file/d/1S0mh9Gj-rD5ghfw-ifl-W-FDkCwRO5uc/view?usp=drive_link
   - name: Product Sheet (PDF)
     url: https://drive.google.com/file/d/16_rlaKwwdUnvvBhd8-apZhJqzynXa8kY/view?usp=sharing
   - name: Quick Start Guide (PDF)
