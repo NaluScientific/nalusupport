@@ -349,9 +349,6 @@ dsa-c10-8:
     url: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.19.1/NaluScope.0.19.1.-.DSA-C10-8.User.Manual.pdf
   - name: NaluScope v0.19.0 Manual
     url: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.19.0/NaluScope.0.19.0.-.DSA-C10-8.User.Manual.pdf
-  current:
-  - name: NaluScope v0.22.5 Manual
-    url: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.22.5/NaluScope.0.22.5.-.DSA-C10-8.User.Manual.pdf
   - name: Firmware (50t) v184 (.bit)
     url: https://drive.google.com/file/d/129UCBDKXzwBu34qRgvKzo5tdE90zXbZB/view?usp=drive_link
   - name: Firmware (50t) v184 (.mcs)
@@ -360,6 +357,17 @@ dsa-c10-8:
     url: https://drive.google.com/file/d/1RJas0lhWiG_pmoDGaCEqR9oWKqzCs5PQ/view?usp=drive_link
   - name: Firmware (200t) v184 (.mcs)
     url: https://drive.google.com/file/d/110uYBo8JEHcZRVBz-Z8y6sTLV4G22-Om/view?usp=drive_link
+  current:
+  - name: NaluScope v0.22.5 Manual
+    url: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.22.5/NaluScope.0.22.5.-.DSA-C10-8.User.Manual.pdf
+  - name: Firmware (50t) v185 (.bit)
+    url: https://drive.google.com/file/d/1T6fNt9hXoYJc440Jn2awZP70x-pOiYIr/view?usp=drive_link
+  - name: Firmware (50t) v185 (.mcs)
+    url: https://drive.google.com/file/d/1lFjKS6akrzqnWmat7RxqsU56vUIsBJ5v/view?usp=drive_link
+  - name: Firmware (200t) v185 (.bit)
+    url: https://drive.google.com/file/d/1hXO31z-YVk5y6I5Fjxnon5VQCXrpRIGC/view?usp=drive_link
+  - name: Firmware (200t) v185 (.mcs)
+    url: https://drive.google.com/file/d/1ZF-nF9x62gtfrmPd7jl2V_JPvB6DliZ6/view?usp=drive_link
   - name: Product Sheet (PDF)
     url: https://drive.google.com/file/d/1Xt4FJkWOvui_CpcxS8y1ALcjFzAjiSLz/view?usp=drive_link
   - name: Quick Start Guide (PDF)
