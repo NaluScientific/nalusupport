@@ -49,6 +49,12 @@ naluexporter:
     name: User Guide
 naluscope:
   archived:
+  - date: '2026-03-03'
+    downloads:
+      appimage: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.22.5/NaluScope-x86_64.AppImage
+      linux: https://github.com/NaluScientific/naluscope-Release/releases/download/v0.22.5/naluscope.tar.gz
+      windows: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.22.5/NaluScope.Installer-0.22.5.0.exe
+    name: v0.22.5
   - date: '2026-01-21'
     downloads:
       appimage: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.22.4/NaluScope-x86_64.AppImage
@@ -187,9 +193,9 @@ naluscope:
       windows: https://drive.google.com/file/d/1-n_BQYrGZvjP4cyXHEeNWXKfsJzepwkJ/view?usp=share_link
     name: 0.11.0
   current:
-  - date: '2026-03-03'
+  - date: '2026-10-24'
     downloads:
-      appimage: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.22.5/NaluScope-x86_64.AppImage
-      linux: https://github.com/NaluScientific/naluscope-Release/releases/download/v0.22.5/naluscope.tar.gz
-      windows: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.22.5/NaluScope.Installer-0.22.5.0.exe
-    name: v0.22.5
+      appimage: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.24.1/NaluScope-x86_64.AppImage
+      linux: https://github.com/NaluScientific/naluscope-Release/releases/download/v0.24.1/naluscope.tar.gz
+      windows: https://github.com/NaluScientific/NaluScope-Release/releases/download/v0.24.1/NaluScope.Installer-0.24.1.0.exe
+    name: v0.24.1
