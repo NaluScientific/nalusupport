@@ -18,7 +18,7 @@ jobs:
       JEKYLL_GITHUB_TOKEN: ${{ github.token }}
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -35,13 +35,13 @@ jobs:
         run: bundle exec jekyll build --trace
 
       - name: Upload site
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: site
           path: _site/
 
       - name: Upload Gemfile.lock
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: gemfile-lock
           path: Gemfile.lock
