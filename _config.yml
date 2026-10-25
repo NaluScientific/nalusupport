@@ -10,6 +10,12 @@ plugins:
 sass:
   style: compressed
   sourcemap: never
+  # Just the Docs 0.5.1 still uses @import, global functions and darken().
+  # Dart Sass removes these in 3.0, so revisit when upgrading the theme.
+  silence_deprecations:
+    - import
+    - global-builtin
+    - color-functions
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
