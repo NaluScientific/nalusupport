@@ -1,0 +1,78 @@
+name: Build and Deploy Site
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Jekyll Build
+    runs-on: ubuntu-latest
+
+    env:
+      JEKYLL_ENV: production
+      # Branches may change the Gemfile and get a regenerated lockfile as an
+      # artifact. main must build from the committed lockfile.
+      BUNDLE_FROZEN: ${{ github.ref == 'refs/heads/main' }}
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: .ruby-version
+
+      - name: Install gems
+        run: bundle install
+
+      - name: Report Gemfile.lock changes
+        run: git diff --exit-code Gemfile.lock || echo "::warning::Gemfile.lock changed during bundle install, commit the gemfile-lock artifact"
+
+      - name: Build site
+        run: bundle exec jekyll build --trace
+
+      - name: Upload site
+        uses: actions/upload-artifact@v7
+        with:
+          name: site
+          path: _site/
+
+      - name: Upload Gemfile.lock
+        uses: actions/upload-artifact@v7
+        with:
+          name: gemfile-lock
+          path: Gemfile.lock
+
+      - name: Upload Pages artifact
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site/
+
+  deploy:
+    name: Deploy to GitHub Pages
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v5

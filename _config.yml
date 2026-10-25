@@ -6,6 +6,16 @@ description: Support website for Nalu Scientific products.
 # ====================== Plugin Settings ======================
 plugins:
   - jekyll-include-cache
+  - jekyll-seo-tag
+sass:
+  style: compressed
+  sourcemap: never
+  # Just the Docs 0.5.1 still uses @import, global functions and darken().
+  # Dart Sass removes these in 3.0, so revisit when upgrading the theme.
+  silence_deprecations:
+    - import
+    - global-builtin
+    - color-functions
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
@@ -123,8 +133,10 @@ exclude:
   - staticman.yml
   - Rakefile
   - "*LICENSE"
-
-
-# ====================== Miscellaneous ======================
-# required by github pages
-github: [metadata]
+  - vendor/
+  - .bundle/
+  - Dockerfile
+  - requirements.txt
+  - "*.py"
+  - lib/
+  - CLAUDE.md
