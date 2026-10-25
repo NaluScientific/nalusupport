@@ -2,6 +2,8 @@ source "https://rubygems.org"
 
 # Run Jekyll with `bundle exec`, e.g. `bundle exec jekyll serve`
 gem "jekyll", "~> 3.10.0"
+# GFM markdown input, a Jekyll dependency from 4.0 on
+gem "kramdown-parser-gfm"
 
 group :jekyll_plugins do
   gem "jekyll-include-cache"
