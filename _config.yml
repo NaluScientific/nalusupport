@@ -135,3 +135,8 @@ exclude:
   - "*LICENSE"
   - vendor/
   - .bundle/
+  - Dockerfile
+  - requirements.txt
+  - "*.py"
+  - lib/
+  - CLAUDE.md
