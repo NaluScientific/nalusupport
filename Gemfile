@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Run Jekyll with `bundle exec`, e.g. `bundle exec jekyll serve`
-gem "jekyll", "~> 4.1.0"
+gem "jekyll", "~> 4.2.0"
 
 group :jekyll_plugins do
   gem "jekyll-include-cache"
