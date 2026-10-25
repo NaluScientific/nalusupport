@@ -123,6 +123,8 @@ exclude:
   - staticman.yml
   - Rakefile
   - "*LICENSE"
+  - vendor/
+  - .bundle/
 
 
 # ====================== Miscellaneous ======================

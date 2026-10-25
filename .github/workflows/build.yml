@@ -1,0 +1,47 @@
+name: Build Site
+
+on:
+  push:
+    branches-ignore:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Jekyll Build
+    runs-on: ubuntu-latest
+
+    env:
+      JEKYLL_ENV: production
+      PAGES_REPO_NWO: ${{ github.repository }}
+      JEKYLL_GITHUB_TOKEN: ${{ github.token }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: .ruby-version
+
+      - name: Install gems
+        run: bundle install
+
+      - name: Report Gemfile.lock changes
+        run: git diff --exit-code Gemfile.lock || echo "::warning::Gemfile.lock changed during bundle install, commit the gemfile-lock artifact"
+
+      - name: Build site
+        run: bundle exec jekyll build --trace
+
+      - name: Upload site
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: _site/
+
+      - name: Upload Gemfile.lock
+        uses: actions/upload-artifact@v4
+        with:
+          name: gemfile-lock
+          path: Gemfile.lock
