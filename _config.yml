@@ -6,6 +6,7 @@ description: Support website for Nalu Scientific products.
 # ====================== Plugin Settings ======================
 plugins:
   - jekyll-include-cache
+  - jekyll-seo-tag
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
@@ -125,8 +126,3 @@ exclude:
   - "*LICENSE"
   - vendor/
   - .bundle/
-
-
-# ====================== Miscellaneous ======================
-# required by github pages
-github: [metadata]
