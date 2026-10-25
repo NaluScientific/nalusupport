@@ -1,11 +1,12 @@
-name: Build Site
+name: Build and Deploy Site
 
 on:
   push:
-    branches-ignore:
-      - main
   pull_request:
   workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   build:
@@ -14,8 +15,9 @@ jobs:
 
     env:
       JEKYLL_ENV: production
-      PAGES_REPO_NWO: ${{ github.repository }}
-      JEKYLL_GITHUB_TOKEN: ${{ github.token }}
+      # Branches may change the Gemfile and get a regenerated lockfile as an
+      # artifact. main must build from the committed lockfile.
+      BUNDLE_FROZEN: ${{ github.ref == 'refs/heads/main' }}
 
     steps:
       - uses: actions/checkout@v7
@@ -45,3 +47,32 @@ jobs:
         with:
           name: gemfile-lock
           path: Gemfile.lock
+
+      - name: Upload Pages artifact
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site/
+
+  deploy:
+    name: Deploy to GitHub Pages
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v5
