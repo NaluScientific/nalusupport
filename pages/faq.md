@@ -24,8 +24,28 @@ Please [email us](/contact/) to request support.
 
 **Linux**
 
-1. Visit the [Software](/software/) page and download the latest `.tar.gz` file.
-2. Older versions may be deleted if desired.
+NaluScope for Linux comes as an AppImage or a tarball. Both contain the same software.
+
+*AppImage:* a single file. No extraction needed.
+
+1. Download the latest `.AppImage` file from the [Software](/software/) page.
+2. Make it executable and run it:
+    ```sh
+    chmod +x NaluScope-x86_64.AppImage
+    ./NaluScope-x86_64.AppImage
+    ```
+3. If it fails with a FUSE error, install `libfuse2`.
+
+*Tarball:* a compressed folder you can extract anywhere.
+
+1. Download the latest `.tar.gz` file from the [Software](/software/) page.
+2. Extract it:
+    ```sh
+    tar -xzf naluscope.tar.gz
+    ```
+3. Run `nalu` from the extracted `nalu` folder.
+
+You can delete older versions.
 
 
 # Troubleshooting
